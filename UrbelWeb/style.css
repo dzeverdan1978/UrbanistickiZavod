@@ -17,4 +17,23 @@
     height:400px;
     overflow:scroll;
     background-color:lightcoral;
+    text-align:center;
 }
+
+tblNaziv{
+    width:70%;
+}
+
+tblRezultat{
+    width:30%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: darkred;
+    color: #fff;
+}
+
+

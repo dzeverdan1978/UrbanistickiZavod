@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Urban", "Urban\Urban.csproj
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "UrbelWeb", "UrbelWeb\", "{3426DCD3-FA00-4B27-AF75-1C1D4E80F937}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_58364"
 		Debug.AspNetCompiler.PhysicalPath = "UrbelWeb\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58364\"
@@ -23,6 +23,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "UrbelWeb", "UrbelWeb\", "{3
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "58364"
+		SlnRelativePath = "UrbelWeb\"
 	EndProjectSection
 EndProject
 Global
