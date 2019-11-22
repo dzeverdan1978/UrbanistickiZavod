@@ -83,6 +83,7 @@
             // 
             // btnExcel
             // 
+            this.btnExcel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExcel.Image = global::Urban.Properties.Resources.excel;
             this.btnExcel.Location = new System.Drawing.Point(925, -3);
             this.btnExcel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -95,7 +96,7 @@
             // 
             // dugme_svi
             // 
-            this.dugme_svi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dugme_svi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dugme_svi.Image = global::Urban.Properties.Resources.globe;
             this.dugme_svi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_svi.Location = new System.Drawing.Point(665, 490);
@@ -109,7 +110,7 @@
             // 
             // dugme_pretraga
             // 
-            this.dugme_pretraga.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dugme_pretraga.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dugme_pretraga.Image = global::Urban.Properties.Resources.search;
             this.dugme_pretraga.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_pretraga.Location = new System.Drawing.Point(515, 490);
@@ -123,6 +124,7 @@
             // 
             // dugme_brisi
             // 
+            this.dugme_brisi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dugme_brisi.Image = global::Urban.Properties.Resources.delete_16x;
             this.dugme_brisi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_brisi.Location = new System.Drawing.Point(290, 498);
@@ -136,6 +138,7 @@
             // 
             // dugme_novi
             // 
+            this.dugme_novi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dugme_novi.Image = global::Urban.Properties.Resources.db;
             this.dugme_novi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_novi.Location = new System.Drawing.Point(146, 498);
@@ -149,6 +152,7 @@
             // 
             // dugme_snimi
             // 
+            this.dugme_snimi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dugme_snimi.Image = global::Urban.Properties.Resources.DISK06;
             this.dugme_snimi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_snimi.Location = new System.Drawing.Point(6, 498);
@@ -162,6 +166,8 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.dtDATUM);
@@ -208,6 +214,7 @@
             // 
             // dtDATUM
             // 
+            this.dtDATUM.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtDATUM.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtDATUM.Location = new System.Drawing.Point(392, 236);
             this.dtDATUM.Name = "dtDATUM";
@@ -216,6 +223,7 @@
             // 
             // label15
             // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(296, 241);
             this.label15.Name = "label15";
@@ -226,6 +234,7 @@
             // 
             // label13
             // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(298, 201);
             this.label13.Name = "label13";
@@ -236,6 +245,7 @@
             // 
             // nuKOM
             // 
+            this.nuKOM.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.nuKOM.Location = new System.Drawing.Point(343, 199);
             this.nuKOM.Name = "nuKOM";
             this.nuKOM.Size = new System.Drawing.Size(48, 22);
@@ -243,6 +253,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(697, 215);
             this.label12.Name = "label12";
@@ -252,6 +263,7 @@
             // 
             // txtBBLBRPRP
             // 
+            this.txtBBLBRPRP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBBLBRPRP.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtBBLBRPRP.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtBBLBRPRP.Location = new System.Drawing.Point(784, 215);
@@ -262,6 +274,7 @@
             // 
             // label11
             // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(705, 170);
             this.label11.Name = "label11";
@@ -272,6 +285,7 @@
             // 
             // txtCUVA
             // 
+            this.txtCUVA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCUVA.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtCUVA.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtCUVA.Location = new System.Drawing.Point(784, 170);
@@ -282,6 +296,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(684, 73);
             this.label10.Name = "label10";
@@ -291,6 +306,7 @@
             // 
             // txtPRIMEDBA
             // 
+            this.txtPRIMEDBA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPRIMEDBA.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtPRIMEDBA.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtPRIMEDBA.Location = new System.Drawing.Point(768, 73);
@@ -303,6 +319,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(705, 28);
             this.label9.Name = "label9";
@@ -312,6 +329,7 @@
             // 
             // txtVRSBIB
             // 
+            this.txtVRSBIB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtVRSBIB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtVRSBIB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtVRSBIB.Location = new System.Drawing.Point(784, 28);
@@ -322,6 +340,7 @@
             // 
             // cbPOZ
             // 
+            this.cbPOZ.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbPOZ.AutoSize = true;
             this.cbPOZ.Location = new System.Drawing.Point(328, 175);
             this.cbPOZ.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -333,6 +352,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(462, 206);
             this.label8.Name = "label8";
@@ -343,6 +363,7 @@
             // 
             // txtPROSPOL
             // 
+            this.txtPROSPOL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPROSPOL.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtPROSPOL.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtPROSPOL.Location = new System.Drawing.Point(541, 206);
@@ -353,6 +374,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(480, 164);
             this.label7.Name = "label7";
@@ -363,6 +385,7 @@
             // 
             // txtBRTA
             // 
+            this.txtBRTA.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtBRTA.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtBRTA.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtBRTA.Location = new System.Drawing.Point(541, 164);
@@ -373,6 +396,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(462, 126);
             this.label2.Name = "label2";
@@ -383,6 +407,7 @@
             // 
             // txtVEZARUP
             // 
+            this.txtVEZARUP.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtVEZARUP.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtVEZARUP.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtVEZARUP.Location = new System.Drawing.Point(541, 126);
@@ -393,6 +418,7 @@
             // 
             // LABEL666
             // 
+            this.LABEL666.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.LABEL666.AutoSize = true;
             this.LABEL666.Location = new System.Drawing.Point(462, 88);
             this.LABEL666.Name = "LABEL666";
@@ -403,6 +429,7 @@
             // 
             // txtOBLIK
             // 
+            this.txtOBLIK.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtOBLIK.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtOBLIK.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtOBLIK.Location = new System.Drawing.Point(541, 88);
@@ -413,6 +440,7 @@
             // 
             // cbPECACEN
             // 
+            this.cbPECACEN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbPECACEN.AutoSize = true;
             this.cbPECACEN.Location = new System.Drawing.Point(328, 141);
             this.cbPECACEN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -425,6 +453,7 @@
             // 
             // cbPOTPISAN
             // 
+            this.cbPOTPISAN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbPOTPISAN.AutoSize = true;
             this.cbPOTPISAN.Location = new System.Drawing.Point(328, 116);
             this.cbPOTPISAN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -437,6 +466,7 @@
             // 
             // cbURADJEN
             // 
+            this.cbURADJEN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbURADJEN.AutoSize = true;
             this.cbURADJEN.Location = new System.Drawing.Point(328, 91);
             this.cbURADJEN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -531,6 +561,7 @@
             // 
             // txtNaziv
             // 
+            this.txtNaziv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNaziv.Location = new System.Drawing.Point(328, 15);
             this.txtNaziv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNaziv.Multiline = true;
@@ -541,6 +572,7 @@
             // 
             // label14
             // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(248, 15);
             this.label14.Name = "label14";
@@ -573,6 +605,9 @@
             // pregled
             // 
             this.pregled.AllowSorting = false;
+            this.pregled.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pregled.DataMember = "";
             this.pregled.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.pregled.Location = new System.Drawing.Point(12, 39);
@@ -584,6 +619,8 @@
             // 
             // natpis_filter
             // 
+            this.natpis_filter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.natpis_filter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.natpis_filter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.natpis_filter.Location = new System.Drawing.Point(166, 11);
@@ -608,9 +645,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pregled);
             this.Controls.Add(this.natpis_filter);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmBUD";
             this.Text = "Biblioteka Urbanistickih Dokumenata";

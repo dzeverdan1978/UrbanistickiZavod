@@ -78,6 +78,8 @@ namespace Urban
             // 
             // natpis_filter
             // 
+            this.natpis_filter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.natpis_filter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.natpis_filter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.natpis_filter.Location = new System.Drawing.Point(223, 9);
@@ -90,6 +92,9 @@ namespace Urban
             // pregled
             // 
             this.pregled.AllowSorting = false;
+            this.pregled.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pregled.DataMember = "";
             this.pregled.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.pregled.Location = new System.Drawing.Point(11, 37);
@@ -100,6 +105,8 @@ namespace Urban
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txtTIPDOC);
@@ -203,6 +210,7 @@ namespace Urban
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(517, 114);
             this.label12.Name = "label12";
@@ -213,6 +221,7 @@ namespace Urban
             // 
             // txtMatr
             // 
+            this.txtMatr.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtMatr.Location = new System.Drawing.Point(565, 114);
             this.txtMatr.Name = "txtMatr";
             this.txtMatr.Size = new System.Drawing.Size(74, 23);
@@ -222,6 +231,7 @@ namespace Urban
             // 
             // label11
             // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(219, 117);
             this.label11.Name = "label11";
@@ -232,6 +242,7 @@ namespace Urban
             // 
             // txtBRKAT
             // 
+            this.txtBRKAT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtBRKAT.Location = new System.Drawing.Point(297, 117);
             this.txtBRKAT.Name = "txtBRKAT";
             this.txtBRKAT.Size = new System.Drawing.Size(207, 23);
@@ -260,6 +271,7 @@ namespace Urban
             // 
             // txtNAPOMENA
             // 
+            this.txtNAPOMENA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNAPOMENA.Location = new System.Drawing.Point(664, 39);
             this.txtNAPOMENA.Multiline = true;
             this.txtNAPOMENA.Name = "txtNAPOMENA";
@@ -271,6 +283,7 @@ namespace Urban
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(582, 39);
             this.label9.Name = "label9";
@@ -280,6 +293,7 @@ namespace Urban
             // 
             // txtNaziv
             // 
+            this.txtNaziv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNaziv.Location = new System.Drawing.Point(365, 39);
             this.txtNaziv.Multiline = true;
             this.txtNaziv.Name = "txtNaziv";
@@ -291,6 +305,7 @@ namespace Urban
             // 
             // label14
             // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(315, 39);
             this.label14.Name = "label14";
@@ -320,6 +335,7 @@ namespace Urban
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(719, 5);
             this.label5.Name = "label5";
@@ -330,6 +346,7 @@ namespace Urban
             // 
             // txtARHBRDOC
             // 
+            this.txtARHBRDOC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtARHBRDOC.Location = new System.Drawing.Point(801, 2);
             this.txtARHBRDOC.Name = "txtARHBRDOC";
             this.txtARHBRDOC.Size = new System.Drawing.Size(104, 23);
@@ -339,6 +356,7 @@ namespace Urban
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(560, 6);
             this.label4.Name = "label4";
@@ -349,6 +367,7 @@ namespace Urban
             // 
             // txtARHBR
             // 
+            this.txtARHBR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtARHBR.Location = new System.Drawing.Point(611, 3);
             this.txtARHBR.Name = "txtARHBR";
             this.txtARHBR.Size = new System.Drawing.Size(104, 23);
@@ -358,6 +377,7 @@ namespace Urban
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(444, 6);
             this.label2.Name = "label2";
@@ -368,6 +388,7 @@ namespace Urban
             // 
             // txtBIB
             // 
+            this.txtBIB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBIB.Location = new System.Drawing.Point(483, 3);
             this.txtBIB.Name = "txtBIB";
             this.txtBIB.Size = new System.Drawing.Size(71, 23);
@@ -434,7 +455,7 @@ namespace Urban
             // 
             // dugme_svi
             // 
-            this.dugme_svi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dugme_svi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dugme_svi.Image = global::Urban.Properties.Resources.globe;
             this.dugme_svi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_svi.Location = new System.Drawing.Point(788, 446);
@@ -447,7 +468,7 @@ namespace Urban
             // 
             // dugme_pretraga
             // 
-            this.dugme_pretraga.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dugme_pretraga.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dugme_pretraga.Image = global::Urban.Properties.Resources.search;
             this.dugme_pretraga.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_pretraga.Location = new System.Drawing.Point(638, 446);
@@ -460,6 +481,7 @@ namespace Urban
             // 
             // dugme_brisi
             // 
+            this.dugme_brisi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dugme_brisi.Image = global::Urban.Properties.Resources.delete_16x;
             this.dugme_brisi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_brisi.Location = new System.Drawing.Point(303, 451);
@@ -472,6 +494,7 @@ namespace Urban
             // 
             // dugme_novi
             // 
+            this.dugme_novi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dugme_novi.Image = global::Urban.Properties.Resources.db;
             this.dugme_novi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_novi.Location = new System.Drawing.Point(159, 451);
@@ -484,6 +507,7 @@ namespace Urban
             // 
             // dugme_snimi
             // 
+            this.dugme_snimi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dugme_snimi.Image = global::Urban.Properties.Resources.DISK06;
             this.dugme_snimi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_snimi.Location = new System.Drawing.Point(18, 451);
@@ -516,6 +540,7 @@ namespace Urban
             // 
             // btnExcel
             // 
+            this.btnExcel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExcel.Image = global::Urban.Properties.Resources.excel;
             this.btnExcel.Location = new System.Drawing.Point(879, 1);
             this.btnExcel.Name = "btnExcel";
@@ -542,8 +567,6 @@ namespace Urban
             this.Controls.Add(this.natpis_filter);
             this.Controls.Add(this.pregled);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
             this.Name = "frmDOC";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "URBDOC";
