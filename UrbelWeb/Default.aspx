@@ -58,12 +58,12 @@
     
     </form>
  <footer>
-     <div id="divFooter">
-  <p>Posted by: Hege Refsnes</p>
-  <p>Contact information: <a href="mailto:someone@example.com">
-  someone@example.com</a>.</p>
+     <div id="divFooter"> 
+  <p>URBANISTIČKI ZAVOD BEOGRADA <a href="https://urbel.com/">urbel.com</a></p>
+  <p>Kontakt: <a href="mailto:office@urbel.com">office@urbel.com</a></p>
+  <p>Tel: 011 3331 500</p>
 </div>
-</footer>
+</footer>:
   
 </body>
 </html>
