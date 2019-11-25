@@ -405,6 +405,7 @@
             this.Controls.Add(this.natpis_filter);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(815, 488);
             this.Name = "frmDosije";
             this.Text = "Evidencija za DOSIJE";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDosije_FormClosing);

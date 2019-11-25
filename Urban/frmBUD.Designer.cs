@@ -630,6 +630,10 @@
             this.natpis_filter.Text = "label17";
             this.natpis_filter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // izvor
+            // 
+            this.izvor.Sort = "opstina,godnast,redbr";
+            // 
             // frmBUD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -647,6 +651,7 @@
             this.Controls.Add(this.natpis_filter);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(997, 580);
             this.Name = "frmBUD";
             this.Text = "Biblioteka Urbanistickih Dokumenata";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmBUD_FormClosing);
