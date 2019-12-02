@@ -567,7 +567,7 @@ namespace Urban
             this.Controls.Add(this.natpis_filter);
             this.Controls.Add(this.pregled);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaximumSize = new System.Drawing.Size(953, 541);
+            this.MinimumSize = new System.Drawing.Size(953, 541);
             this.Name = "frmDOC";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "URBDOC";

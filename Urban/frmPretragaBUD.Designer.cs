@@ -591,9 +591,11 @@
             // 
             // frmPretragaBUD
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CancelButton = this.button2;
             this.ClientSize = new System.Drawing.Size(968, 453);
             this.Controls.Add(this.btnOcisti);
             this.Controls.Add(this.button2);

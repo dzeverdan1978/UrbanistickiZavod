@@ -37,6 +37,15 @@ namespace Urban
             cbAzur.Checked = false;
         }
 
+        private void label3_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tip = new ToolTip();
+            tip.IsBalloon = true;
+            tip.AutoPopDelay = 10000;
+            string caption = "01 Barajevo 02 Vozdovac 03 Vracar 04 Grocka\n 05 Zvezdara 06 Zemun 07 Lazarevac 08 Mladenovac\n 09 N.Beograd 10 Obrenovac 11 Palilula 12 S.Venac\n 13 Sopot 14 S.Grad 15 Cukarica 16 Rakovica 17 Surcin";
+            tip.SetToolTip(label3, caption);
+        }
+
         private void cbOpt_CheckedChanged(object sender, EventArgs e)
         {
             cbAzur.Visible = cbOpt.Checked;
