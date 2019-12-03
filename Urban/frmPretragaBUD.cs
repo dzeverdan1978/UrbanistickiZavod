@@ -47,6 +47,15 @@ namespace Urban
             pnlDatum.Visible = cbOptDatum.Checked;
         }
 
+        private void Label3_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tip = new ToolTip();
+            tip.IsBalloon = true;
+            tip.AutoPopDelay = 10000;
+            string caption = "01 Barajevo, 02 Čukarica, 03 Grocka, 04 Lazarevac, 05 Mladenovac, 06 Novi Beograd, 07 Obrenovac, 08 Palilula, 09 Savski venac, 10 Sopot, 11 Stari grad, 12 Voždovac, 13 Vračar, 14 Zemun, 15 Zvezdara, 16 Rakovica, GRAD  Gradsko područje";
+            tip.SetToolTip(label3, caption);
+        }
+
         private void btnOcisti_Click(object sender, EventArgs e)
         {
             pp = new BUDPamcenje();
