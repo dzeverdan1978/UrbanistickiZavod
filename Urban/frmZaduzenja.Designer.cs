@@ -115,7 +115,7 @@ namespace Urban
             this.lblAlarm.BackColor = System.Drawing.Color.Red;
             this.lblAlarm.Location = new System.Drawing.Point(4, 143);
             this.lblAlarm.Name = "lblAlarm";
-            this.lblAlarm.Size = new System.Drawing.Size(233, 17);
+            this.lblAlarm.Size = new System.Drawing.Size(183, 13);
             this.lblAlarm.TabIndex = 81;
             this.lblAlarm.Text = "Zaduženje je duže od 60 dana!";
             this.lblAlarm.Visible = false;
@@ -138,7 +138,7 @@ namespace Urban
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(561, 57);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 17);
+            this.label4.Size = new System.Drawing.Size(76, 13);
             this.label4.TabIndex = 80;
             this.label4.Text = "NAPOMENA";
             // 
@@ -148,7 +148,7 @@ namespace Urban
             this.cbRazduzen.FormattingEnabled = true;
             this.cbRazduzen.Location = new System.Drawing.Point(370, 80);
             this.cbRazduzen.Name = "cbRazduzen";
-            this.cbRazduzen.Size = new System.Drawing.Size(138, 25);
+            this.cbRazduzen.Size = new System.Drawing.Size(138, 21);
             this.cbRazduzen.TabIndex = 77;
             this.cbRazduzen.Enter += new System.EventHandler(this.cbRazduzen_Enter);
             this.cbRazduzen.Leave += new System.EventHandler(this.cbRazduzen_Leave);
@@ -159,7 +159,7 @@ namespace Urban
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(289, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 17);
+            this.label2.Size = new System.Drawing.Size(75, 13);
             this.label2.TabIndex = 78;
             this.label2.Text = "RAZDUŽEN";
             // 
@@ -168,7 +168,7 @@ namespace Urban
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(4, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 17);
+            this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 76;
             this.label1.Text = "DUŽNIK";
             // 
@@ -178,7 +178,7 @@ namespace Urban
             this.txtDuznik.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtDuznik.Location = new System.Drawing.Point(64, 85);
             this.txtDuznik.Name = "txtDuznik";
-            this.txtDuznik.Size = new System.Drawing.Size(216, 23);
+            this.txtDuznik.Size = new System.Drawing.Size(216, 20);
             this.txtDuznik.TabIndex = 75;
             this.txtDuznik.Enter += new System.EventHandler(this.txtDuznik_Enter);
             this.txtDuznik.Layout += new System.Windows.Forms.LayoutEventHandler(this.txtDuznik_Layout);
@@ -190,7 +190,7 @@ namespace Urban
             this.dtDATUM.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtDATUM.Location = new System.Drawing.Point(588, 8);
             this.dtDATUM.Name = "dtDATUM";
-            this.dtDATUM.Size = new System.Drawing.Size(133, 23);
+            this.dtDATUM.Size = new System.Drawing.Size(133, 20);
             this.dtDATUM.TabIndex = 74;
             this.dtDATUM.Enter += new System.EventHandler(this.dtDATUM_Enter);
             this.dtDATUM.Leave += new System.EventHandler(this.dtDATUM_Leave);
@@ -201,7 +201,7 @@ namespace Urban
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(525, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 17);
+            this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 73;
             this.label3.Text = "DATUM";
             // 
@@ -223,7 +223,7 @@ namespace Urban
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(214, 15);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(53, 17);
+            this.label14.Size = new System.Drawing.Size(44, 13);
             this.label14.TabIndex = 72;
             this.label14.Text = "NAZIV";
             // 
@@ -232,7 +232,7 @@ namespace Urban
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(4, 15);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 17);
+            this.label6.Size = new System.Drawing.Size(43, 13);
             this.label6.TabIndex = 65;
             this.label6.Text = "ŠIFRA";
             // 
@@ -242,7 +242,7 @@ namespace Urban
             this.txtSifra.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtSifra.Location = new System.Drawing.Point(53, 12);
             this.txtSifra.Name = "txtSifra";
-            this.txtSifra.Size = new System.Drawing.Size(148, 23);
+            this.txtSifra.Size = new System.Drawing.Size(148, 20);
             this.txtSifra.TabIndex = 64;
             this.txtSifra.TextChanged += new System.EventHandler(this.txtSifra_TextChanged);
             this.txtSifra.Enter += new System.EventHandler(this.txtSifra_Enter);
@@ -340,10 +340,10 @@ namespace Urban
             // 
             // frmZaduzenja
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(807, 442);
+            this.ClientSize = new System.Drawing.Size(809, 450);
             this.Controls.Add(this.btnExcel);
             this.Controls.Add(this.btnStampa);
             this.Controls.Add(this.dugme_svi);
@@ -355,7 +355,6 @@ namespace Urban
             this.Controls.Add(this.pregled);
             this.Controls.Add(this.natpis_filter);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(825, 489);
             this.Name = "frmZaduzenja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
