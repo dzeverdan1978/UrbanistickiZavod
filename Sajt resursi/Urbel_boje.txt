@@ -1,0 +1,5 @@
+Pozadina (tamnija boja)
+HEX/HTML	004965
+
+Svetla boja
+HEX/HTML	32BCAD

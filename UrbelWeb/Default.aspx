@@ -32,24 +32,21 @@
     <div id="divHeader" class="row">
         
         <div align="left" class="col-lg-3">
-        <img src="Grb-grada-250x300pix.jpg" style="height: 130px; width: 111px" />
+            <img src="urbel_logotip.png" />
         </div>
         
-        <div align="center" class="col-ig-10">
-        <h3>ODELJENJE ZA DOKUMENTACIJU</h3>
-        <h5>Pretraga uz pomoć kartografskog broja</h5>
-        <span id="uputstvo" style="color:Red; visibility:hidden">Ukucajte kartografski broj predmeta i pritisnite taster ENTER</span>
-        </div>
+       
         
    </div>
         <div id="divUnos" class="row">
+            <span id="uputstvo" style="color:Red; visibility:hidden">Ukucajte kartografski broj predmeta i pritisnite taster ENTER</span>
         <hr /><br />
         <div onmouseover="Vidljivo()" onmouseout="Nevidljivo()" class="col-ig-12">
         <strong>Kartografski broj:</strong>
         <asp:TextBox ID="txtLart" runat="server" AutoPostBack="true" OnLoad="txtLart_Load" OnTextChanged="txtLart_TextChanged" /> 
         </div>
         </div>
-        <hr /><br />
+       
         <div id="divRezultat" class="row">
             <div class="col-md-auto" align="center">
                 <asp:Literal ID="lit" runat="server" />
