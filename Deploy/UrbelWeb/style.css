@@ -1,0 +1,41 @@
+﻿body {
+    background-color: #004965;
+}
+
+#divHeader {
+    background-color: #004965;
+    font-weight: bold;
+    padding: 20px 20px 20px 20px;
+}
+
+#divUnos {
+    background-color: #32BCAD;
+    border-style: solid;
+    border-width: 3px;
+    padding: 10px 10px 10px 10px;
+}
+
+#divRezultat {
+    height:400px;
+    overflow:scroll;
+    background-color:darkgray;
+    text-align:center;
+}
+
+tblNaziv{
+    width:70%;
+}
+
+tblRezultat{
+    width:30%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #004965;
+    color: #fff;
+}
+
+
