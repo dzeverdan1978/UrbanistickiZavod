@@ -110,7 +110,7 @@ namespace Urban
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(8, 15);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 17);
+            this.label7.Size = new System.Drawing.Size(24, 13);
             this.label7.TabIndex = 170;
             this.label7.Text = "BR";
             this.tt.SetToolTip(this.label7, "Redni broj");
@@ -121,7 +121,7 @@ namespace Urban
             this.txtBR.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtBR.Location = new System.Drawing.Point(38, 12);
             this.txtBR.Name = "txtBR";
-            this.txtBR.Size = new System.Drawing.Size(54, 23);
+            this.txtBR.Size = new System.Drawing.Size(54, 20);
             this.txtBR.TabIndex = 169;
             this.txtBR.Leave += new System.EventHandler(this.txtBR_Leave);
             // 
@@ -130,7 +130,7 @@ namespace Urban
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(350, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 17);
+            this.label4.Size = new System.Drawing.Size(50, 13);
             this.label4.TabIndex = 176;
             this.label4.Text = "ARHBR";
             this.tt.SetToolTip(this.label4, "Arhivski broj");
@@ -141,7 +141,7 @@ namespace Urban
             this.txtARHBR.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtARHBR.Location = new System.Drawing.Point(401, 12);
             this.txtARHBR.Name = "txtARHBR";
-            this.txtARHBR.Size = new System.Drawing.Size(104, 23);
+            this.txtARHBR.Size = new System.Drawing.Size(104, 20);
             this.txtARHBR.TabIndex = 175;
             this.txtARHBR.Leave += new System.EventHandler(this.txtARHBR_Leave);
             // 
@@ -150,7 +150,7 @@ namespace Urban
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(234, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 17);
+            this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 174;
             this.label2.Text = "BIB";
             this.tt.SetToolTip(this.label2, "Bibliotecki broj");
@@ -161,7 +161,7 @@ namespace Urban
             this.txtBIB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtBIB.Location = new System.Drawing.Point(273, 12);
             this.txtBIB.Name = "txtBIB";
-            this.txtBIB.Size = new System.Drawing.Size(71, 23);
+            this.txtBIB.Size = new System.Drawing.Size(71, 20);
             this.txtBIB.TabIndex = 173;
             this.txtBIB.Leave += new System.EventHandler(this.txtBIB_Leave);
             // 
@@ -170,7 +170,7 @@ namespace Urban
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(99, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 17);
+            this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 172;
             this.label1.Text = "REGB";
             this.tt.SetToolTip(this.label1, "Registarski broj");
@@ -181,7 +181,7 @@ namespace Urban
             this.txtREGB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtREGB.Location = new System.Drawing.Point(148, 12);
             this.txtREGB.Name = "txtREGB";
-            this.txtREGB.Size = new System.Drawing.Size(80, 23);
+            this.txtREGB.Size = new System.Drawing.Size(80, 20);
             this.txtREGB.TabIndex = 171;
             this.txtREGB.Leave += new System.EventHandler(this.txtREGB_Leave);
             // 
@@ -190,7 +190,7 @@ namespace Urban
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(525, 18);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 17);
+            this.label5.Size = new System.Drawing.Size(76, 13);
             this.label5.TabIndex = 178;
             this.label5.Text = "ARHBRDOC";
             this.tt.SetToolTip(this.label5, "Arhivski broj dozvole");
@@ -201,7 +201,7 @@ namespace Urban
             this.txtARHBRDOC.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtARHBRDOC.Location = new System.Drawing.Point(607, 15);
             this.txtARHBRDOC.Name = "txtARHBRDOC";
-            this.txtARHBRDOC.Size = new System.Drawing.Size(104, 23);
+            this.txtARHBRDOC.Size = new System.Drawing.Size(104, 20);
             this.txtARHBRDOC.TabIndex = 177;
             this.txtARHBRDOC.Leave += new System.EventHandler(this.txtARHBRDOC_Leave);
             // 
@@ -220,7 +220,7 @@ namespace Urban
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(277, 52);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(94, 17);
+            this.label9.Size = new System.Drawing.Size(76, 13);
             this.label9.TabIndex = 182;
             this.label9.Text = "NAPOMENA";
             // 
@@ -239,7 +239,7 @@ namespace Urban
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(10, 52);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(53, 17);
+            this.label14.Size = new System.Drawing.Size(44, 13);
             this.label14.TabIndex = 180;
             this.label14.Text = "NAZIV";
             // 
@@ -248,7 +248,7 @@ namespace Urban
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(9, 142);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 17);
+            this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 184;
             this.label3.Text = "OPSTINA";
             this.label3.MouseHover += new System.EventHandler(this.label3_MouseHover);
@@ -259,7 +259,7 @@ namespace Urban
             this.txtOPSTINA.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtOPSTINA.Location = new System.Drawing.Point(76, 139);
             this.txtOPSTINA.Name = "txtOPSTINA";
-            this.txtOPSTINA.Size = new System.Drawing.Size(195, 23);
+            this.txtOPSTINA.Size = new System.Drawing.Size(195, 20);
             this.txtOPSTINA.TabIndex = 183;
             this.txtOPSTINA.Leave += new System.EventHandler(this.txtOPSTINA_Leave);
             // 
@@ -268,7 +268,7 @@ namespace Urban
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(487, 142);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(90, 17);
+            this.label11.Size = new System.Drawing.Size(73, 13);
             this.label11.TabIndex = 188;
             this.label11.Text = "BRKATPAR";
             this.tt.SetToolTip(this.label11, "Broj katastarske parcele");
@@ -279,7 +279,7 @@ namespace Urban
             this.txtBRKAT.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtBRKAT.Location = new System.Drawing.Point(565, 142);
             this.txtBRKAT.Name = "txtBRKAT";
-            this.txtBRKAT.Size = new System.Drawing.Size(179, 23);
+            this.txtBRKAT.Size = new System.Drawing.Size(179, 20);
             this.txtBRKAT.TabIndex = 187;
             this.txtBRKAT.Leave += new System.EventHandler(this.txtBRKAT_Leave);
             // 
@@ -288,7 +288,7 @@ namespace Urban
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(277, 142);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 17);
+            this.label10.Size = new System.Drawing.Size(64, 13);
             this.label10.TabIndex = 186;
             this.label10.Text = "KATOPST";
             this.tt.SetToolTip(this.label10, "Sifra katastarske opstine");
@@ -299,7 +299,7 @@ namespace Urban
             this.txtKATOPST.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtKATOPST.Location = new System.Drawing.Point(344, 142);
             this.txtKATOPST.Name = "txtKATOPST";
-            this.txtKATOPST.Size = new System.Drawing.Size(141, 23);
+            this.txtKATOPST.Size = new System.Drawing.Size(141, 20);
             this.txtKATOPST.TabIndex = 185;
             this.txtKATOPST.Leave += new System.EventHandler(this.txtKATOPST_Leave);
             // 
@@ -308,7 +308,7 @@ namespace Urban
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(12, 191);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(51, 17);
+            this.label12.Size = new System.Drawing.Size(42, 13);
             this.label12.TabIndex = 190;
             this.label12.Text = "MATR";
             this.tt.SetToolTip(this.label12, "Broj arhiva matrica");
@@ -319,7 +319,7 @@ namespace Urban
             this.txtMatr.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtMatr.Location = new System.Drawing.Point(60, 191);
             this.txtMatr.Name = "txtMatr";
-            this.txtMatr.Size = new System.Drawing.Size(74, 23);
+            this.txtMatr.Size = new System.Drawing.Size(74, 20);
             this.txtMatr.TabIndex = 189;
             this.txtMatr.Leave += new System.EventHandler(this.txtMatr_Leave);
             // 
@@ -328,7 +328,7 @@ namespace Urban
             this.optDATUMI.AutoSize = true;
             this.optDATUMI.Location = new System.Drawing.Point(176, 176);
             this.optDATUMI.Name = "optDATUMI";
-            this.optDATUMI.Size = new System.Drawing.Size(88, 21);
+            this.optDATUMI.Size = new System.Drawing.Size(74, 17);
             this.optDATUMI.TabIndex = 192;
             this.optDATUMI.Text = "DATUMI";
             this.optDATUMI.UseVisualStyleBackColor = true;
@@ -352,7 +352,7 @@ namespace Urban
             this.datumDO.Location = new System.Drawing.Point(345, 17);
             this.datumDO.Mask = "00/00/0000";
             this.datumDO.Name = "datumDO";
-            this.datumDO.Size = new System.Drawing.Size(113, 23);
+            this.datumDO.Size = new System.Drawing.Size(113, 20);
             this.datumDO.TabIndex = 148;
             this.datumDO.ValidatingType = typeof(System.DateTime);
             this.datumDO.Leave += new System.EventHandler(this.datumDO_Leave);
@@ -362,7 +362,7 @@ namespace Urban
             this.datumOD.Location = new System.Drawing.Point(100, 17);
             this.datumOD.Mask = "00/00/0000";
             this.datumOD.Name = "datumOD";
-            this.datumOD.Size = new System.Drawing.Size(113, 23);
+            this.datumOD.Size = new System.Drawing.Size(113, 20);
             this.datumOD.TabIndex = 147;
             this.datumOD.ValidatingType = typeof(System.DateTime);
             this.datumOD.Leave += new System.EventHandler(this.datumOD_Leave);
@@ -372,7 +372,7 @@ namespace Urban
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(247, 20);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 17);
+            this.label6.Size = new System.Drawing.Size(73, 13);
             this.label6.TabIndex = 105;
             this.label6.Text = "DATUM DO";
             // 
@@ -381,17 +381,16 @@ namespace Urban
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(2, 20);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 17);
+            this.label8.Size = new System.Drawing.Size(73, 13);
             this.label8.TabIndex = 103;
             this.label8.Text = "DATUM OD";
             // 
             // lbINREF
             // 
             this.lbINREF.FormattingEnabled = true;
-            this.lbINREF.ItemHeight = 17;
             this.lbINREF.Location = new System.Drawing.Point(139, 277);
             this.lbINREF.Name = "lbINREF";
-            this.lbINREF.Size = new System.Drawing.Size(98, 55);
+            this.lbINREF.Size = new System.Drawing.Size(98, 43);
             this.lbINREF.TabIndex = 193;
             this.lbINREF.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lbINREF_KeyDown);
             // 
@@ -416,7 +415,7 @@ namespace Urban
             "POU"});
             this.cbINREF.Location = new System.Drawing.Point(55, 277);
             this.cbINREF.Name = "cbINREF";
-            this.cbINREF.Size = new System.Drawing.Size(79, 25);
+            this.cbINREF.Size = new System.Drawing.Size(79, 21);
             this.cbINREF.TabIndex = 194;
             this.cbINREF.Text = "---";
             this.cbINREF.SelectedIndexChanged += new System.EventHandler(this.cbINREF_SelectedIndexChanged);
@@ -426,7 +425,7 @@ namespace Urban
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(5, 280);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(53, 17);
+            this.label13.Size = new System.Drawing.Size(44, 13);
             this.label13.TabIndex = 195;
             this.label13.Text = "INREF";
             this.tt.SetToolTip(this.label13, "Predmet obradio\\la");
@@ -452,7 +451,7 @@ namespace Urban
             "POU"});
             this.cbTIPDOC.Location = new System.Drawing.Point(321, 277);
             this.cbTIPDOC.Name = "cbTIPDOC";
-            this.cbTIPDOC.Size = new System.Drawing.Size(79, 25);
+            this.cbTIPDOC.Size = new System.Drawing.Size(79, 21);
             this.cbTIPDOC.TabIndex = 196;
             this.cbTIPDOC.Text = "---";
             this.cbTIPDOC.SelectedIndexChanged += new System.EventHandler(this.cbTIPDOC_SelectedIndexChanged);
@@ -462,7 +461,7 @@ namespace Urban
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(247, 280);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(65, 17);
+            this.label15.Size = new System.Drawing.Size(53, 13);
             this.label15.TabIndex = 197;
             this.label15.Text = "TIPDOC";
             this.label15.MouseHover += new System.EventHandler(this.label15_MouseHover);
@@ -470,10 +469,9 @@ namespace Urban
             // lbTIPDOC
             // 
             this.lbTIPDOC.FormattingEnabled = true;
-            this.lbTIPDOC.ItemHeight = 17;
             this.lbTIPDOC.Location = new System.Drawing.Point(407, 277);
             this.lbTIPDOC.Name = "lbTIPDOC";
-            this.lbTIPDOC.Size = new System.Drawing.Size(98, 55);
+            this.lbTIPDOC.Size = new System.Drawing.Size(98, 43);
             this.lbTIPDOC.TabIndex = 198;
             this.lbTIPDOC.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lbTIPDOC_KeyDown);
             // 
@@ -482,7 +480,7 @@ namespace Urban
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(525, 276);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(63, 17);
+            this.label16.Size = new System.Drawing.Size(50, 13);
             this.label16.TabIndex = 200;
             this.label16.Text = "OSNOV";
             this.tt.SetToolTip(this.label16, "Planski i pravni osnov");
@@ -493,7 +491,7 @@ namespace Urban
             this.txtOsnov.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtOsnov.Location = new System.Drawing.Point(581, 273);
             this.txtOsnov.Name = "txtOsnov";
-            this.txtOsnov.Size = new System.Drawing.Size(194, 23);
+            this.txtOsnov.Size = new System.Drawing.Size(194, 20);
             this.txtOsnov.TabIndex = 199;
             this.txtOsnov.Leave += new System.EventHandler(this.txtOsnov_Leave);
             // 
@@ -502,7 +500,7 @@ namespace Urban
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(542, 316);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(23, 17);
+            this.label17.Size = new System.Drawing.Size(20, 13);
             this.label17.TabIndex = 202;
             this.label17.Text = "ID";
             // 
@@ -510,7 +508,7 @@ namespace Urban
             // 
             this.txtID.Location = new System.Drawing.Point(581, 313);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(71, 23);
+            this.txtID.Size = new System.Drawing.Size(71, 20);
             this.txtID.TabIndex = 201;
             this.txtID.Leave += new System.EventHandler(this.txtID_Leave);
             // 
@@ -524,9 +522,10 @@ namespace Urban
             // frmDOCPretraga
             // 
             this.AcceptButton = this.button1;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.CancelButton = this.button2;
             this.ClientSize = new System.Drawing.Size(803, 431);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.txtID);

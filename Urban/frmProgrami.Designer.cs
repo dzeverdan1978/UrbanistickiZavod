@@ -71,6 +71,9 @@ namespace Urban
             // pregled
             // 
             this.pregled.AllowSorting = false;
+            this.pregled.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pregled.DataMember = "";
             this.pregled.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.pregled.Location = new System.Drawing.Point(14, 37);
@@ -81,6 +84,8 @@ namespace Urban
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.cbSkeniran);
@@ -111,6 +116,7 @@ namespace Urban
             // 
             // cbSkeniran
             // 
+            this.cbSkeniran.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbSkeniran.AutoSize = true;
             this.cbSkeniran.Location = new System.Drawing.Point(730, 132);
             this.cbSkeniran.Name = "cbSkeniran";
@@ -122,6 +128,7 @@ namespace Urban
             // 
             // CBdIGITALAN
             // 
+            this.CBdIGITALAN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CBdIGITALAN.AutoSize = true;
             this.CBdIGITALAN.Location = new System.Drawing.Point(730, 92);
             this.CBdIGITALAN.Name = "CBdIGITALAN";
@@ -141,17 +148,19 @@ namespace Urban
             // 
             // txtNaziv
             // 
+            this.txtNaziv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNaziv.Location = new System.Drawing.Point(463, 96);
             this.txtNaziv.Multiline = true;
             this.txtNaziv.Name = "txtNaziv";
             this.txtNaziv.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtNaziv.Size = new System.Drawing.Size(232, 81);
             this.txtNaziv.TabIndex = 69;
-            this.txtNaziv.Leave += new System.EventHandler(this.txtNaziv_Leave);
             this.txtNaziv.Enter += new System.EventHandler(this.txtNaziv_Enter);
+            this.txtNaziv.Leave += new System.EventHandler(this.txtNaziv_Leave);
             // 
             // label14
             // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(400, 96);
             this.label14.Name = "label14";
@@ -184,11 +193,12 @@ namespace Urban
             this.txtVeza.Name = "txtVeza";
             this.txtVeza.Size = new System.Drawing.Size(148, 23);
             this.txtVeza.TabIndex = 64;
-            this.txtVeza.Leave += new System.EventHandler(this.txtVeza_Leave);
             this.txtVeza.Enter += new System.EventHandler(this.txtVeza_Enter);
+            this.txtVeza.Leave += new System.EventHandler(this.txtVeza_Leave);
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(599, 48);
             this.label6.Name = "label6";
@@ -199,15 +209,17 @@ namespace Urban
             // 
             // txtKart
             // 
+            this.txtKart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtKart.Location = new System.Drawing.Point(662, 45);
             this.txtKart.Name = "txtKart";
             this.txtKart.Size = new System.Drawing.Size(148, 23);
             this.txtKart.TabIndex = 62;
-            this.txtKart.Leave += new System.EventHandler(this.txtKart_Leave);
             this.txtKart.Enter += new System.EventHandler(this.txtKart_Enter);
+            this.txtKart.Leave += new System.EventHandler(this.txtKart_Leave);
             // 
             // cbObrad
             // 
+            this.cbObrad.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbObrad.FormattingEnabled = true;
             this.cbObrad.Items.AddRange(new object[] {
             "UP",
@@ -229,11 +241,12 @@ namespace Urban
             this.cbObrad.Name = "cbObrad";
             this.cbObrad.Size = new System.Drawing.Size(221, 25);
             this.cbObrad.TabIndex = 60;
-            this.cbObrad.Leave += new System.EventHandler(this.cbObrad_Leave);
             this.cbObrad.Enter += new System.EventHandler(this.cbObrad_Enter);
+            this.cbObrad.Leave += new System.EventHandler(this.cbObrad_Leave);
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(281, 48);
             this.label5.Name = "label5";
@@ -257,11 +270,12 @@ namespace Urban
             this.txtOpstina.Name = "txtOpstina";
             this.txtOpstina.Size = new System.Drawing.Size(180, 23);
             this.txtOpstina.TabIndex = 58;
-            this.txtOpstina.Leave += new System.EventHandler(this.txtOpstina_Leave);
             this.txtOpstina.Enter += new System.EventHandler(this.txtOpstina_Enter);
+            this.txtOpstina.Leave += new System.EventHandler(this.txtOpstina_Leave);
             // 
             // cbInicijat
             // 
+            this.cbInicijat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbInicijat.FormattingEnabled = true;
             this.cbInicijat.Items.AddRange(new object[] {
             "UP",
@@ -283,11 +297,12 @@ namespace Urban
             this.cbInicijat.Name = "cbInicijat";
             this.cbInicijat.Size = new System.Drawing.Size(204, 25);
             this.cbInicijat.TabIndex = 56;
-            this.cbInicijat.Leave += new System.EventHandler(this.cbInicijat_Leave);
             this.cbInicijat.Enter += new System.EventHandler(this.cbInicijat_Enter);
+            this.cbInicijat.Leave += new System.EventHandler(this.cbInicijat_Leave);
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(557, 8);
             this.label2.Name = "label2";
@@ -298,6 +313,7 @@ namespace Urban
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(366, 7);
             this.label8.Name = "label8";
@@ -308,12 +324,13 @@ namespace Urban
             // 
             // txtArh
             // 
+            this.txtArh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtArh.Location = new System.Drawing.Point(422, 7);
             this.txtArh.Name = "txtArh";
             this.txtArh.Size = new System.Drawing.Size(123, 23);
             this.txtArh.TabIndex = 54;
-            this.txtArh.Leave += new System.EventHandler(this.txtArh_Leave);
             this.txtArh.Enter += new System.EventHandler(this.txtArh_Enter);
+            this.txtArh.Leave += new System.EventHandler(this.txtArh_Leave);
             // 
             // label3
             // 
@@ -347,8 +364,8 @@ namespace Urban
             this.cbTipPlakt.Name = "cbTipPlakt";
             this.cbTipPlakt.Size = new System.Drawing.Size(79, 25);
             this.cbTipPlakt.TabIndex = 3;
-            this.cbTipPlakt.Leave += new System.EventHandler(this.cbTipPlakt_Leave);
             this.cbTipPlakt.Enter += new System.EventHandler(this.cbTipPlakt_Enter);
+            this.cbTipPlakt.Leave += new System.EventHandler(this.cbTipPlakt_Leave);
             // 
             // label1
             // 
@@ -369,6 +386,8 @@ namespace Urban
             // 
             // natpis_filter
             // 
+            this.natpis_filter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.natpis_filter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.natpis_filter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.natpis_filter.Location = new System.Drawing.Point(226, 9);
@@ -380,6 +399,7 @@ namespace Urban
             // 
             // dugme_brisi
             // 
+            this.dugme_brisi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dugme_brisi.Image = global::Urban.Properties.Resources.delete_16x;
             this.dugme_brisi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_brisi.Location = new System.Drawing.Point(299, 433);
@@ -392,6 +412,7 @@ namespace Urban
             // 
             // dugme_novi
             // 
+            this.dugme_novi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dugme_novi.Image = global::Urban.Properties.Resources.db;
             this.dugme_novi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_novi.Location = new System.Drawing.Point(155, 433);
@@ -404,6 +425,7 @@ namespace Urban
             // 
             // dugme_snimi
             // 
+            this.dugme_snimi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dugme_snimi.Image = global::Urban.Properties.Resources.DISK06;
             this.dugme_snimi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_snimi.Location = new System.Drawing.Point(14, 433);
@@ -416,7 +438,7 @@ namespace Urban
             // 
             // dugme_svi
             // 
-            this.dugme_svi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dugme_svi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dugme_svi.Image = global::Urban.Properties.Resources.globe;
             this.dugme_svi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_svi.Location = new System.Drawing.Point(735, 433);
@@ -429,7 +451,7 @@ namespace Urban
             // 
             // dugme_pretraga
             // 
-            this.dugme_pretraga.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dugme_pretraga.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dugme_pretraga.Image = global::Urban.Properties.Resources.search;
             this.dugme_pretraga.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_pretraga.Location = new System.Drawing.Point(585, 433);
@@ -442,6 +464,7 @@ namespace Urban
             // 
             // btnDodajPrik
             // 
+            this.btnDodajPrik.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnDodajPrik.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnDodajPrik.Location = new System.Drawing.Point(440, 440);
             this.btnDodajPrik.Name = "btnDodajPrik";
@@ -454,6 +477,7 @@ namespace Urban
             // 
             // btnExcel
             // 
+            this.btnExcel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExcel.Image = global::Urban.Properties.Resources.excel;
             this.btnExcel.Location = new System.Drawing.Point(832, 1);
             this.btnExcel.Name = "btnExcel";
@@ -494,14 +518,13 @@ namespace Urban
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pregled);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(902, 522);
             this.Name = "frmProgrami";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Evidencija programa";
-            this.Load += new System.EventHandler(this.frmProgrami_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmProgrami_FormClosing);
+            this.Load += new System.EventHandler(this.frmProgrami_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pregled)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

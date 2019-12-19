@@ -120,19 +120,19 @@
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtREDBR);
-            this.panel1.Location = new System.Drawing.Point(6, 11);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(4, 9);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(950, 374);
+            this.panel1.Size = new System.Drawing.Size(713, 304);
             this.panel1.TabIndex = 34;
             // 
             // cbOptDatum
             // 
             this.cbOptDatum.AutoSize = true;
-            this.cbOptDatum.Location = new System.Drawing.Point(15, 285);
-            this.cbOptDatum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbOptDatum.Location = new System.Drawing.Point(11, 232);
+            this.cbOptDatum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbOptDatum.Name = "cbOptDatum";
-            this.cbOptDatum.Size = new System.Drawing.Size(220, 21);
+            this.cbOptDatum.Size = new System.Drawing.Size(167, 17);
             this.cbOptDatum.TabIndex = 114;
             this.cbOptDatum.Text = "Pretraga po datumu usvajanja";
             this.cbOptDatum.UseVisualStyleBackColor = true;
@@ -147,53 +147,58 @@
             this.pnlDatum.Controls.Add(this.label16);
             this.pnlDatum.Controls.Add(this.dtDatumOd);
             this.pnlDatum.Controls.Add(this.label15);
-            this.pnlDatum.Location = new System.Drawing.Point(15, 311);
+            this.pnlDatum.Location = new System.Drawing.Point(11, 253);
+            this.pnlDatum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlDatum.Name = "pnlDatum";
-            this.pnlDatum.Size = new System.Drawing.Size(442, 49);
+            this.pnlDatum.Size = new System.Drawing.Size(332, 40);
             this.pnlDatum.TabIndex = 113;
             this.pnlDatum.Visible = false;
             // 
             // dtDatumDo
             // 
             this.dtDatumDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtDatumDo.Location = new System.Drawing.Point(238, 12);
+            this.dtDatumDo.Location = new System.Drawing.Point(178, 10);
+            this.dtDatumDo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtDatumDo.Name = "dtDatumDo";
-            this.dtDatumDo.Size = new System.Drawing.Size(133, 22);
+            this.dtDatumDo.Size = new System.Drawing.Size(101, 20);
             this.dtDatumDo.TabIndex = 112;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(197, 17);
+            this.label16.Location = new System.Drawing.Point(148, 14);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(29, 17);
+            this.label16.Size = new System.Drawing.Size(23, 13);
             this.label16.TabIndex = 111;
             this.label16.Text = "DO";
             // 
             // dtDatumOd
             // 
             this.dtDatumOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtDatumOd.Location = new System.Drawing.Point(48, 12);
+            this.dtDatumOd.Location = new System.Drawing.Point(36, 10);
+            this.dtDatumOd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtDatumOd.Name = "dtDatumOd";
-            this.dtDatumOd.Size = new System.Drawing.Size(133, 22);
+            this.dtDatumOd.Size = new System.Drawing.Size(101, 20);
             this.dtDatumOd.TabIndex = 110;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(7, 17);
+            this.label15.Location = new System.Drawing.Point(5, 14);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(29, 17);
+            this.label15.Size = new System.Drawing.Size(23, 13);
             this.label15.TabIndex = 109;
             this.label15.Text = "OD";
             // 
             // cbOptPoz
             // 
             this.cbOptPoz.AutoSize = true;
-            this.cbOptPoz.Location = new System.Drawing.Point(327, 253);
-            this.cbOptPoz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbOptPoz.Location = new System.Drawing.Point(245, 206);
+            this.cbOptPoz.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbOptPoz.Name = "cbOptPoz";
-            this.cbOptPoz.Size = new System.Drawing.Size(104, 21);
+            this.cbOptPoz.Size = new System.Drawing.Size(83, 17);
             this.cbOptPoz.TabIndex = 112;
             this.cbOptPoz.Text = "Ukljuci POZ";
             this.cbOptPoz.UseVisualStyleBackColor = true;
@@ -203,10 +208,10 @@
             // cbOptPecacen
             // 
             this.cbOptPecacen.AutoSize = true;
-            this.cbOptPecacen.Location = new System.Drawing.Point(327, 192);
-            this.cbOptPecacen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbOptPecacen.Location = new System.Drawing.Point(245, 156);
+            this.cbOptPecacen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbOptPecacen.Name = "cbOptPecacen";
-            this.cbOptPecacen.Size = new System.Drawing.Size(130, 21);
+            this.cbOptPecacen.Size = new System.Drawing.Size(104, 17);
             this.cbOptPecacen.TabIndex = 111;
             this.cbOptPecacen.Text = "Ukljuci Pecacen";
             this.cbOptPecacen.UseVisualStyleBackColor = true;
@@ -216,10 +221,10 @@
             // cbOptPotpisan
             // 
             this.cbOptPotpisan.AutoSize = true;
-            this.cbOptPotpisan.Location = new System.Drawing.Point(327, 135);
-            this.cbOptPotpisan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbOptPotpisan.Location = new System.Drawing.Point(245, 110);
+            this.cbOptPotpisan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbOptPotpisan.Name = "cbOptPotpisan";
-            this.cbOptPotpisan.Size = new System.Drawing.Size(130, 21);
+            this.cbOptPotpisan.Size = new System.Drawing.Size(102, 17);
             this.cbOptPotpisan.TabIndex = 110;
             this.cbOptPotpisan.Text = "Ukljuci Potpisan";
             this.cbOptPotpisan.UseVisualStyleBackColor = true;
@@ -229,10 +234,10 @@
             // cbOptUradjen
             // 
             this.cbOptUradjen.AutoSize = true;
-            this.cbOptUradjen.Location = new System.Drawing.Point(327, 88);
-            this.cbOptUradjen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbOptUradjen.Location = new System.Drawing.Point(245, 72);
+            this.cbOptUradjen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbOptUradjen.Name = "cbOptUradjen";
-            this.cbOptUradjen.Size = new System.Drawing.Size(125, 21);
+            this.cbOptUradjen.Size = new System.Drawing.Size(98, 17);
             this.cbOptUradjen.TabIndex = 109;
             this.cbOptUradjen.Text = "Ukljuci Uradjen";
             this.cbOptUradjen.UseVisualStyleBackColor = true;
@@ -242,9 +247,10 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(697, 215);
+            this.label12.Location = new System.Drawing.Point(523, 175);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(84, 17);
+            this.label12.Size = new System.Drawing.Size(67, 13);
             this.label12.TabIndex = 104;
             this.label12.Text = "BIBLBRPRP";
             // 
@@ -252,18 +258,19 @@
             // 
             this.txtBBLBRPRP.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtBBLBRPRP.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtBBLBRPRP.Location = new System.Drawing.Point(784, 215);
-            this.txtBBLBRPRP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBBLBRPRP.Location = new System.Drawing.Point(588, 175);
+            this.txtBBLBRPRP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBBLBRPRP.Name = "txtBBLBRPRP";
-            this.txtBBLBRPRP.Size = new System.Drawing.Size(137, 22);
+            this.txtBBLBRPRP.Size = new System.Drawing.Size(104, 20);
             this.txtBBLBRPRP.TabIndex = 103;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(705, 170);
+            this.label11.Location = new System.Drawing.Point(529, 138);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(45, 17);
+            this.label11.Size = new System.Drawing.Size(36, 13);
             this.label11.TabIndex = 102;
             this.label11.Text = "CUVA";
             // 
@@ -271,18 +278,19 @@
             // 
             this.txtCUVA.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtCUVA.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtCUVA.Location = new System.Drawing.Point(784, 170);
-            this.txtCUVA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCUVA.Location = new System.Drawing.Point(588, 138);
+            this.txtCUVA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCUVA.Name = "txtCUVA";
-            this.txtCUVA.Size = new System.Drawing.Size(137, 22);
+            this.txtCUVA.Size = new System.Drawing.Size(104, 20);
             this.txtCUVA.TabIndex = 101;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(684, 73);
+            this.label10.Location = new System.Drawing.Point(513, 59);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(78, 17);
+            this.label10.Size = new System.Drawing.Size(63, 13);
             this.label10.TabIndex = 100;
             this.label10.Text = "PRIMEDBA";
             // 
@@ -290,20 +298,21 @@
             // 
             this.txtPRIMEDBA.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtPRIMEDBA.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtPRIMEDBA.Location = new System.Drawing.Point(768, 73);
-            this.txtPRIMEDBA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPRIMEDBA.Location = new System.Drawing.Point(576, 59);
+            this.txtPRIMEDBA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPRIMEDBA.Multiline = true;
             this.txtPRIMEDBA.Name = "txtPRIMEDBA";
             this.txtPRIMEDBA.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtPRIMEDBA.Size = new System.Drawing.Size(153, 75);
+            this.txtPRIMEDBA.Size = new System.Drawing.Size(116, 62);
             this.txtPRIMEDBA.TabIndex = 99;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(705, 28);
+            this.label9.Location = new System.Drawing.Point(529, 23);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 17);
+            this.label9.Size = new System.Drawing.Size(46, 13);
             this.label9.TabIndex = 98;
             this.label9.Text = "VRSBIB";
             // 
@@ -311,19 +320,19 @@
             // 
             this.txtVRSBIB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtVRSBIB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtVRSBIB.Location = new System.Drawing.Point(784, 28);
-            this.txtVRSBIB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtVRSBIB.Location = new System.Drawing.Point(588, 23);
+            this.txtVRSBIB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtVRSBIB.Name = "txtVRSBIB";
-            this.txtVRSBIB.Size = new System.Drawing.Size(137, 22);
+            this.txtVRSBIB.Size = new System.Drawing.Size(104, 20);
             this.txtVRSBIB.TabIndex = 97;
             // 
             // cbPOZ
             // 
             this.cbPOZ.AutoSize = true;
-            this.cbPOZ.Location = new System.Drawing.Point(328, 278);
-            this.cbPOZ.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbPOZ.Location = new System.Drawing.Point(246, 226);
+            this.cbPOZ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbPOZ.Name = "cbPOZ";
-            this.cbPOZ.Size = new System.Drawing.Size(59, 21);
+            this.cbPOZ.Size = new System.Drawing.Size(48, 17);
             this.cbPOZ.TabIndex = 96;
             this.cbPOZ.Text = "POZ";
             this.cbPOZ.UseVisualStyleBackColor = true;
@@ -332,9 +341,10 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(462, 206);
+            this.label8.Location = new System.Drawing.Point(346, 167);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 17);
+            this.label8.Size = new System.Drawing.Size(58, 13);
             this.label8.TabIndex = 95;
             this.label8.Text = "PROSPOL";
             // 
@@ -342,18 +352,19 @@
             // 
             this.txtPROSPOL.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtPROSPOL.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtPROSPOL.Location = new System.Drawing.Point(541, 206);
-            this.txtPROSPOL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPROSPOL.Location = new System.Drawing.Point(406, 167);
+            this.txtPROSPOL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPROSPOL.Name = "txtPROSPOL";
-            this.txtPROSPOL.Size = new System.Drawing.Size(137, 22);
+            this.txtPROSPOL.Size = new System.Drawing.Size(104, 20);
             this.txtPROSPOL.TabIndex = 94;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(480, 164);
+            this.label7.Location = new System.Drawing.Point(360, 133);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 17);
+            this.label7.Size = new System.Drawing.Size(36, 13);
             this.label7.TabIndex = 93;
             this.label7.Text = "BRTA";
             // 
@@ -361,18 +372,19 @@
             // 
             this.txtBRTA.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtBRTA.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtBRTA.Location = new System.Drawing.Point(541, 164);
-            this.txtBRTA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBRTA.Location = new System.Drawing.Point(406, 133);
+            this.txtBRTA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBRTA.Name = "txtBRTA";
-            this.txtBRTA.Size = new System.Drawing.Size(137, 22);
+            this.txtBRTA.Size = new System.Drawing.Size(104, 20);
             this.txtBRTA.TabIndex = 92;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(462, 126);
+            this.label2.Location = new System.Drawing.Point(346, 102);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 17);
+            this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 91;
             this.label2.Text = "VEZARUP";
             // 
@@ -380,18 +392,19 @@
             // 
             this.txtVEZARUP.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtVEZARUP.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtVEZARUP.Location = new System.Drawing.Point(541, 126);
-            this.txtVEZARUP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtVEZARUP.Location = new System.Drawing.Point(406, 102);
+            this.txtVEZARUP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtVEZARUP.Name = "txtVEZARUP";
-            this.txtVEZARUP.Size = new System.Drawing.Size(137, 22);
+            this.txtVEZARUP.Size = new System.Drawing.Size(104, 20);
             this.txtVEZARUP.TabIndex = 90;
             // 
             // LABEL666
             // 
             this.LABEL666.AutoSize = true;
-            this.LABEL666.Location = new System.Drawing.Point(462, 88);
+            this.LABEL666.Location = new System.Drawing.Point(346, 72);
+            this.LABEL666.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LABEL666.Name = "LABEL666";
-            this.LABEL666.Size = new System.Drawing.Size(48, 17);
+            this.LABEL666.Size = new System.Drawing.Size(38, 13);
             this.LABEL666.TabIndex = 89;
             this.LABEL666.Text = "OBLIK";
             // 
@@ -399,19 +412,19 @@
             // 
             this.txtOBLIK.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtOBLIK.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtOBLIK.Location = new System.Drawing.Point(541, 88);
-            this.txtOBLIK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtOBLIK.Location = new System.Drawing.Point(406, 72);
+            this.txtOBLIK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtOBLIK.Name = "txtOBLIK";
-            this.txtOBLIK.Size = new System.Drawing.Size(137, 22);
+            this.txtOBLIK.Size = new System.Drawing.Size(104, 20);
             this.txtOBLIK.TabIndex = 88;
             // 
             // cbPECACEN
             // 
             this.cbPECACEN.AutoSize = true;
-            this.cbPECACEN.Location = new System.Drawing.Point(328, 217);
-            this.cbPECACEN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbPECACEN.Location = new System.Drawing.Point(246, 176);
+            this.cbPECACEN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbPECACEN.Name = "cbPECACEN";
-            this.cbPECACEN.Size = new System.Drawing.Size(94, 21);
+            this.cbPECACEN.Size = new System.Drawing.Size(76, 17);
             this.cbPECACEN.TabIndex = 87;
             this.cbPECACEN.Text = "PECACEN";
             this.cbPECACEN.UseVisualStyleBackColor = true;
@@ -420,10 +433,10 @@
             // cbPOTPISAN
             // 
             this.cbPOTPISAN.AutoSize = true;
-            this.cbPOTPISAN.Location = new System.Drawing.Point(328, 160);
-            this.cbPOTPISAN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbPOTPISAN.Location = new System.Drawing.Point(246, 130);
+            this.cbPOTPISAN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbPOTPISAN.Name = "cbPOTPISAN";
-            this.cbPOTPISAN.Size = new System.Drawing.Size(99, 21);
+            this.cbPOTPISAN.Size = new System.Drawing.Size(80, 17);
             this.cbPOTPISAN.TabIndex = 86;
             this.cbPOTPISAN.Text = "POTPISAN";
             this.cbPOTPISAN.UseVisualStyleBackColor = true;
@@ -432,10 +445,10 @@
             // cbURADJEN
             // 
             this.cbURADJEN.AutoSize = true;
-            this.cbURADJEN.Location = new System.Drawing.Point(327, 110);
-            this.cbURADJEN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbURADJEN.Location = new System.Drawing.Point(245, 89);
+            this.cbURADJEN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbURADJEN.Name = "cbURADJEN";
-            this.cbURADJEN.Size = new System.Drawing.Size(95, 21);
+            this.cbURADJEN.Size = new System.Drawing.Size(77, 17);
             this.cbURADJEN.TabIndex = 85;
             this.cbURADJEN.Text = "URADJEN";
             this.cbURADJEN.UseVisualStyleBackColor = true;
@@ -444,9 +457,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(25, 179);
+            this.label5.Location = new System.Drawing.Point(19, 145);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 17);
+            this.label5.Size = new System.Drawing.Size(45, 13);
             this.label5.TabIndex = 84;
             this.label5.Text = "ARHBR";
             // 
@@ -454,18 +468,19 @@
             // 
             this.txtARHBR.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtARHBR.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtARHBR.Location = new System.Drawing.Point(86, 179);
-            this.txtARHBR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtARHBR.Location = new System.Drawing.Point(64, 145);
+            this.txtARHBR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtARHBR.Name = "txtARHBR";
-            this.txtARHBR.Size = new System.Drawing.Size(137, 22);
+            this.txtARHBR.Size = new System.Drawing.Size(104, 20);
             this.txtARHBR.TabIndex = 83;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(49, 131);
+            this.label4.Location = new System.Drawing.Point(37, 106);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 17);
+            this.label4.Size = new System.Drawing.Size(24, 13);
             this.label4.TabIndex = 82;
             this.label4.Text = "TIP";
             // 
@@ -473,37 +488,40 @@
             // 
             this.txtTIP.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtTIP.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtTIP.Location = new System.Drawing.Point(86, 131);
-            this.txtTIP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTIP.Location = new System.Drawing.Point(64, 106);
+            this.txtTIP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTIP.Name = "txtTIP";
-            this.txtTIP.Size = new System.Drawing.Size(137, 22);
+            this.txtTIP.Size = new System.Drawing.Size(104, 20);
             this.txtTIP.TabIndex = 81;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 93);
+            this.label3.Location = new System.Drawing.Point(9, 76);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 17);
+            this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 80;
             this.label3.Text = "OPSTINA";
+            this.label3.MouseHover += new System.EventHandler(this.Label3_MouseHover);
             // 
             // txtOpstina
             // 
             this.txtOpstina.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtOpstina.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtOpstina.Location = new System.Drawing.Point(87, 90);
-            this.txtOpstina.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtOpstina.Location = new System.Drawing.Point(65, 73);
+            this.txtOpstina.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtOpstina.Name = "txtOpstina";
-            this.txtOpstina.Size = new System.Drawing.Size(137, 22);
+            this.txtOpstina.Size = new System.Drawing.Size(104, 20);
             this.txtOpstina.TabIndex = 79;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 50);
+            this.label1.Location = new System.Drawing.Point(3, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 17);
+            this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 76;
             this.label1.Text = "GODNAST";
             // 
@@ -511,37 +529,39 @@
             // 
             this.txtGODNAST.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtGODNAST.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtGODNAST.Location = new System.Drawing.Point(87, 47);
-            this.txtGODNAST.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtGODNAST.Location = new System.Drawing.Point(65, 38);
+            this.txtGODNAST.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtGODNAST.Name = "txtGODNAST";
-            this.txtGODNAST.Size = new System.Drawing.Size(137, 22);
+            this.txtGODNAST.Size = new System.Drawing.Size(104, 20);
             this.txtGODNAST.TabIndex = 75;
             // 
             // txtNaziv
             // 
-            this.txtNaziv.Location = new System.Drawing.Point(328, 15);
-            this.txtNaziv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNaziv.Location = new System.Drawing.Point(246, 12);
+            this.txtNaziv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNaziv.Multiline = true;
             this.txtNaziv.Name = "txtNaziv";
             this.txtNaziv.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtNaziv.Size = new System.Drawing.Size(332, 54);
+            this.txtNaziv.Size = new System.Drawing.Size(250, 45);
             this.txtNaziv.TabIndex = 71;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(248, 15);
+            this.label14.Location = new System.Drawing.Point(186, 12);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(48, 17);
+            this.label14.Size = new System.Drawing.Size(39, 13);
             this.label14.TabIndex = 72;
             this.label14.Text = "NAZIV";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(4, 15);
+            this.label6.Location = new System.Drawing.Point(3, 12);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 17);
+            this.label6.Size = new System.Drawing.Size(45, 13);
             this.label6.TabIndex = 65;
             this.label6.Text = "REDBR";
             // 
@@ -549,18 +569,18 @@
             // 
             this.txtREDBR.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtREDBR.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtREDBR.Location = new System.Drawing.Point(64, 12);
-            this.txtREDBR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtREDBR.Location = new System.Drawing.Point(48, 10);
+            this.txtREDBR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtREDBR.Name = "txtREDBR";
-            this.txtREDBR.Size = new System.Drawing.Size(94, 22);
+            this.txtREDBR.Size = new System.Drawing.Size(72, 20);
             this.txtREDBR.TabIndex = 64;
             // 
             // btnOcisti
             // 
-            this.btnOcisti.Location = new System.Drawing.Point(538, 402);
-            this.btnOcisti.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOcisti.Location = new System.Drawing.Point(404, 327);
+            this.btnOcisti.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOcisti.Name = "btnOcisti";
-            this.btnOcisti.Size = new System.Drawing.Size(107, 39);
+            this.btnOcisti.Size = new System.Drawing.Size(80, 32);
             this.btnOcisti.TabIndex = 174;
             this.btnOcisti.Text = "Ocisti pretragu";
             this.btnOcisti.UseVisualStyleBackColor = true;
@@ -569,10 +589,10 @@
             // button2
             // 
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button2.Location = new System.Drawing.Point(350, 405);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(262, 329);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 37);
+            this.button2.Size = new System.Drawing.Size(84, 30);
             this.button2.TabIndex = 173;
             this.button2.Text = "Odustani";
             this.button2.UseVisualStyleBackColor = true;
@@ -580,10 +600,10 @@
             // button1
             // 
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(214, 405);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(160, 329);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 37);
+            this.button1.Size = new System.Drawing.Size(84, 30);
             this.button1.TabIndex = 172;
             this.button1.Text = "Potvrdi";
             this.button1.UseVisualStyleBackColor = true;
@@ -591,15 +611,18 @@
             // 
             // frmPretragaBUD
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AcceptButton = this.button1;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(968, 453);
+            this.CancelButton = this.button2;
+            this.ClientSize = new System.Drawing.Size(726, 368);
             this.Controls.Add(this.btnOcisti);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmPretragaBUD";

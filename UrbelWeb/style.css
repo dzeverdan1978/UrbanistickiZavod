@@ -1,22 +1,24 @@
 ﻿body {
-    
+    background-color: #004965;
 }
 
 #divHeader {
-    background-color: lightgray;
-    font-weight:bold;
+    background-color: #004965;
+    font-weight: bold;
+    padding: 20px 20px 20px 20px;
 }
 
 #divUnos {
-    background-color: silver;
+    background-color: #32BCAD;
     border-style: solid;
-    border-width: 5px;
+    border-width: 3px;
+    padding: 10px 10px 10px 10px;
 }
 
 #divRezultat {
     height:400px;
     overflow:scroll;
-    background-color:lightcoral;
+    background-color:darkgray;
     text-align:center;
 }
 
@@ -32,7 +34,7 @@ footer {
     display: flex;
     justify-content: center;
     padding: 5px;
-    background-color: darkred;
+    background-color: #004965;
     color: #fff;
 }
 

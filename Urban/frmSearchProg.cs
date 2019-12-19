@@ -268,6 +268,15 @@ namespace Urban
             {
                 filter += (s3.Checked) ? Prefix + " " + "SKEN=1" : Prefix + " " + "SKEN=0";
             }
+
+            pp.obradjivac = txtObrad.Text;
+            pp.arh = txtArh.Text;
+            pp.opstina = txtOpstina.Text;
+            pp.kart = txtKart.Text;
+            pp.naziv = txtNaziv.Text;
+            pp.veza = txtVeza.Text;
+            pp.datpoc = datumOD.Text;
+            pp.datkraj = datumDO.Text;
         }
 
         private void label1_MouseHover(object sender, EventArgs e)
@@ -296,42 +305,43 @@ namespace Urban
 
         private void txtObrad_Leave(object sender, EventArgs e)
         {
-            pp.obradjivac = txtObrad.Text;
+            
         }
 
         private void txtArh_Leave(object sender, EventArgs e)
         {
-            pp.arh = txtArh.Text;
+            
         }
 
         private void txtOpstina_Leave(object sender, EventArgs e)
         {
-            pp.opstina = txtOpstina.Text;
+            
         }
 
         private void txtKart_Leave(object sender, EventArgs e)
         {
-            pp.kart = txtKart.Text;
+            
         }
 
         private void txtNaziv_Leave(object sender, EventArgs e)
         {
-            pp.naziv = txtNaziv.Text;
+            
         }
 
         private void txtVeza_Leave(object sender, EventArgs e)
         {
-            pp.veza = txtVeza.Text;
+            
         }
 
         private void datumOD_Leave(object sender, EventArgs e)
         {
-            pp.datpoc = datumOD.Text;
+
+            
         }
 
         private void datumDO_Leave(object sender, EventArgs e)
         {
-            pp.datkraj = datumDO.Text;
+            
         }
 
         private void r1_CheckedChanged(object sender, EventArgs e)

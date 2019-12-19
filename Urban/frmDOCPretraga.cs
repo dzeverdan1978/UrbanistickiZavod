@@ -248,79 +248,97 @@ namespace Urban
             ProveriListu(lbTIPDOC, cbTIPDOC);
         }
 
-        private void txtBR_Leave(object sender, EventArgs e)
+        private void PopuniPP()
         {
             pp.br = txtBR.Text;
+            pp.regb = txtREGB.Text;
+            pp.bib = txtBIB.Text;
+            pp.arhbr = txtARHBR.Text;
+            pp.arhbrdoc = txtARHBRDOC.Text;
+            pp.naziv = txtNaziv.Text;
+            pp.napom = txtNAPOMENA.Text;
+            pp.opstina = txtOPSTINA.Text;
+            pp.katopst = txtKATOPST.Text;
+            pp.brka = txtBRKAT.Text;
+            pp.mat = txtMatr.Text;
+            pp.osnov = txtOsnov.Text;
+            pp.id = txtID.Text;
+            pp.datpoc = datumOD.Text;
+            pp.datkraj = datumDO.Text;
+        }
+        private void txtBR_Leave(object sender, EventArgs e)
+        {
+            
         }
 
         private void txtREGB_Leave(object sender, EventArgs e)
         {
-            pp.regb = txtREGB.Text;
+            
         }
 
         private void txtBIB_Leave(object sender, EventArgs e)
         {
-            pp.bib = txtBIB.Text;
+            
         }
 
         private void txtARHBR_Leave(object sender, EventArgs e)
         {
-            pp.arhbr = txtARHBR.Text;
+            
         }
 
         private void txtARHBRDOC_Leave(object sender, EventArgs e)
         {
-            pp.arhbrdoc = txtARHBRDOC.Text;
+            
         }
 
         private void txtNaziv_Leave(object sender, EventArgs e)
         {
-            pp.naziv = txtNaziv.Text;
+            
         }
 
         private void txtNAPOMENA_Leave(object sender, EventArgs e)
         {
-            pp.napom = txtNAPOMENA.Text;
+            
         }
 
         private void txtOPSTINA_Leave(object sender, EventArgs e)
         {
-            pp.opstina = txtOPSTINA.Text;
+            
         }
 
         private void txtKATOPST_Leave(object sender, EventArgs e)
         {
-            pp.katopst = txtKATOPST.Text;
+           
         }
 
         private void txtBRKAT_Leave(object sender, EventArgs e)
         {
-            pp.brka = txtBRKAT.Text;
+            
         }
 
         private void txtMatr_Leave(object sender, EventArgs e)
         {
-            pp.mat = txtMatr.Text;
+            
         }
 
         private void txtOsnov_Leave(object sender, EventArgs e)
         {
-            pp.osnov = txtOsnov.Text;
+           
         }
 
         private void txtID_Leave(object sender, EventArgs e)
         {
-            pp.id = txtID.Text;
+            
         }
 
         private void datumOD_Leave(object sender, EventArgs e)
         {
-            pp.datpoc = datumOD.Text;
+            
         }
 
         private void datumDO_Leave(object sender, EventArgs e)
         {
-            pp.datkraj = datumDO.Text;
+            
         }
 
         private string DajLB(ListBox lb)
@@ -369,6 +387,8 @@ namespace Urban
             {
                 filter += Prefix + " DATUM>='" + datumOD.Text + "' AND DATUM<='" + datumDO.Text + "'";
             }
+
+            PopuniPP();
             
         }
 

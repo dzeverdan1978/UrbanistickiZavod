@@ -147,6 +147,7 @@
             this.label3.Size = new System.Drawing.Size(68, 17);
             this.label3.TabIndex = 80;
             this.label3.Text = "OPSTINA";
+            this.label3.MouseHover += new System.EventHandler(this.label3_MouseHover);
             // 
             // txtOpstina
             // 
@@ -270,8 +271,10 @@
             // 
             // frmPretragaDosije
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.button2;
             this.ClientSize = new System.Drawing.Size(799, 255);
             this.Controls.Add(this.btnOcisti);
             this.Controls.Add(this.button2);

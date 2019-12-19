@@ -32,6 +32,7 @@ namespace Urban
             this.natpis_filter = new System.Windows.Forms.Label();
             this.pregled = new System.Windows.Forms.DataGrid();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblAlarm = new System.Windows.Forms.Label();
             this.txtNapomena = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cbRazduzen = new System.Windows.Forms.ComboBox();
@@ -52,7 +53,6 @@ namespace Urban
             this.izvor = new System.Windows.Forms.BindingSource(this.components);
             this.btnStampa = new System.Windows.Forms.Button();
             this.btnExcel = new System.Windows.Forms.Button();
-            this.lblAlarm = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pregled)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.izvor)).BeginInit();
@@ -60,6 +60,8 @@ namespace Urban
             // 
             // natpis_filter
             // 
+            this.natpis_filter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.natpis_filter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.natpis_filter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.natpis_filter.Location = new System.Drawing.Point(169, 9);
@@ -72,6 +74,9 @@ namespace Urban
             // pregled
             // 
             this.pregled.AllowSorting = false;
+            this.pregled.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pregled.DataMember = "";
             this.pregled.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.pregled.Location = new System.Drawing.Point(14, 37);
@@ -82,6 +87,8 @@ namespace Urban
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.lblAlarm);
@@ -102,42 +109,57 @@ namespace Urban
             this.panel1.Size = new System.Drawing.Size(779, 178);
             this.panel1.TabIndex = 13;
             // 
+            // lblAlarm
+            // 
+            this.lblAlarm.AutoSize = true;
+            this.lblAlarm.BackColor = System.Drawing.Color.Red;
+            this.lblAlarm.Location = new System.Drawing.Point(4, 143);
+            this.lblAlarm.Name = "lblAlarm";
+            this.lblAlarm.Size = new System.Drawing.Size(183, 13);
+            this.lblAlarm.TabIndex = 81;
+            this.lblAlarm.Text = "Zaduženje je duže od 60 dana!";
+            this.lblAlarm.Visible = false;
+            // 
             // txtNapomena
             // 
+            this.txtNapomena.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNapomena.Location = new System.Drawing.Point(564, 77);
             this.txtNapomena.Multiline = true;
             this.txtNapomena.Name = "txtNapomena";
             this.txtNapomena.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtNapomena.Size = new System.Drawing.Size(210, 56);
             this.txtNapomena.TabIndex = 79;
-            this.txtNapomena.Leave += new System.EventHandler(this.txtNapomena_Leave);
             this.txtNapomena.Enter += new System.EventHandler(this.txtNapomena_Enter);
+            this.txtNapomena.Leave += new System.EventHandler(this.txtNapomena_Leave);
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(561, 57);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 17);
+            this.label4.Size = new System.Drawing.Size(76, 13);
             this.label4.TabIndex = 80;
             this.label4.Text = "NAPOMENA";
             // 
             // cbRazduzen
             // 
+            this.cbRazduzen.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbRazduzen.FormattingEnabled = true;
             this.cbRazduzen.Location = new System.Drawing.Point(370, 80);
             this.cbRazduzen.Name = "cbRazduzen";
-            this.cbRazduzen.Size = new System.Drawing.Size(138, 25);
+            this.cbRazduzen.Size = new System.Drawing.Size(138, 21);
             this.cbRazduzen.TabIndex = 77;
-            this.cbRazduzen.Leave += new System.EventHandler(this.cbRazduzen_Leave);
             this.cbRazduzen.Enter += new System.EventHandler(this.cbRazduzen_Enter);
+            this.cbRazduzen.Leave += new System.EventHandler(this.cbRazduzen_Leave);
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(289, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 17);
+            this.label2.Size = new System.Drawing.Size(75, 13);
             this.label2.TabIndex = 78;
             this.label2.Text = "RAZDUŽEN";
             // 
@@ -146,7 +168,7 @@ namespace Urban
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(4, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 17);
+            this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 76;
             this.label1.Text = "DUŽNIK";
             // 
@@ -156,48 +178,52 @@ namespace Urban
             this.txtDuznik.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtDuznik.Location = new System.Drawing.Point(64, 85);
             this.txtDuznik.Name = "txtDuznik";
-            this.txtDuznik.Size = new System.Drawing.Size(216, 23);
+            this.txtDuznik.Size = new System.Drawing.Size(216, 20);
             this.txtDuznik.TabIndex = 75;
+            this.txtDuznik.Enter += new System.EventHandler(this.txtDuznik_Enter);
             this.txtDuznik.Layout += new System.Windows.Forms.LayoutEventHandler(this.txtDuznik_Layout);
             this.txtDuznik.Leave += new System.EventHandler(this.txtDuznik_Leave);
-            this.txtDuznik.Enter += new System.EventHandler(this.txtDuznik_Enter);
             // 
             // dtDATUM
             // 
+            this.dtDATUM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dtDATUM.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtDATUM.Location = new System.Drawing.Point(588, 8);
             this.dtDATUM.Name = "dtDATUM";
-            this.dtDATUM.Size = new System.Drawing.Size(133, 23);
+            this.dtDATUM.Size = new System.Drawing.Size(133, 20);
             this.dtDATUM.TabIndex = 74;
-            this.dtDATUM.Leave += new System.EventHandler(this.dtDATUM_Leave);
             this.dtDATUM.Enter += new System.EventHandler(this.dtDATUM_Enter);
+            this.dtDATUM.Leave += new System.EventHandler(this.dtDATUM_Leave);
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(525, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 17);
+            this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 73;
             this.label3.Text = "DATUM";
             // 
             // txtNaziv
             // 
+            this.txtNaziv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNaziv.Location = new System.Drawing.Point(277, 15);
             this.txtNaziv.Multiline = true;
             this.txtNaziv.Name = "txtNaziv";
             this.txtNaziv.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtNaziv.Size = new System.Drawing.Size(231, 55);
             this.txtNaziv.TabIndex = 71;
-            this.txtNaziv.Leave += new System.EventHandler(this.txtNaziv_Leave);
             this.txtNaziv.Enter += new System.EventHandler(this.txtNaziv_Enter);
+            this.txtNaziv.Leave += new System.EventHandler(this.txtNaziv_Leave);
             // 
             // label14
             // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(214, 15);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(53, 17);
+            this.label14.Size = new System.Drawing.Size(44, 13);
             this.label14.TabIndex = 72;
             this.label14.Text = "NAZIV";
             // 
@@ -206,7 +232,7 @@ namespace Urban
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(4, 15);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 17);
+            this.label6.Size = new System.Drawing.Size(43, 13);
             this.label6.TabIndex = 65;
             this.label6.Text = "ŠIFRA";
             // 
@@ -216,14 +242,15 @@ namespace Urban
             this.txtSifra.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtSifra.Location = new System.Drawing.Point(53, 12);
             this.txtSifra.Name = "txtSifra";
-            this.txtSifra.Size = new System.Drawing.Size(148, 23);
+            this.txtSifra.Size = new System.Drawing.Size(148, 20);
             this.txtSifra.TabIndex = 64;
             this.txtSifra.TextChanged += new System.EventHandler(this.txtSifra_TextChanged);
-            this.txtSifra.Leave += new System.EventHandler(this.txtSifra_Leave);
             this.txtSifra.Enter += new System.EventHandler(this.txtSifra_Enter);
+            this.txtSifra.Leave += new System.EventHandler(this.txtSifra_Leave);
             // 
             // dugme_brisi
             // 
+            this.dugme_brisi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dugme_brisi.Image = global::Urban.Properties.Resources.delete_16x;
             this.dugme_brisi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_brisi.Location = new System.Drawing.Point(297, 403);
@@ -236,6 +263,7 @@ namespace Urban
             // 
             // dugme_novi
             // 
+            this.dugme_novi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dugme_novi.Image = global::Urban.Properties.Resources.db;
             this.dugme_novi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_novi.Location = new System.Drawing.Point(153, 403);
@@ -248,6 +276,7 @@ namespace Urban
             // 
             // dugme_snimi
             // 
+            this.dugme_snimi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dugme_snimi.Image = global::Urban.Properties.Resources.DISK06;
             this.dugme_snimi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_snimi.Location = new System.Drawing.Point(12, 403);
@@ -260,7 +289,7 @@ namespace Urban
             // 
             // dugme_svi
             // 
-            this.dugme_svi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dugme_svi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dugme_svi.Image = global::Urban.Properties.Resources.globe;
             this.dugme_svi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_svi.Location = new System.Drawing.Point(669, 399);
@@ -273,7 +302,7 @@ namespace Urban
             // 
             // dugme_pretraga
             // 
-            this.dugme_pretraga.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dugme_pretraga.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dugme_pretraga.Image = global::Urban.Properties.Resources.search;
             this.dugme_pretraga.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dugme_pretraga.Location = new System.Drawing.Point(519, 399);
@@ -299,6 +328,7 @@ namespace Urban
             // 
             // btnExcel
             // 
+            this.btnExcel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExcel.Image = global::Urban.Properties.Resources.excel;
             this.btnExcel.Location = new System.Drawing.Point(755, -2);
             this.btnExcel.Name = "btnExcel";
@@ -308,23 +338,12 @@ namespace Urban
             this.btnExcel.Visible = false;
             this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
             // 
-            // lblAlarm
-            // 
-            this.lblAlarm.AutoSize = true;
-            this.lblAlarm.BackColor = System.Drawing.Color.Red;
-            this.lblAlarm.Location = new System.Drawing.Point(4, 143);
-            this.lblAlarm.Name = "lblAlarm";
-            this.lblAlarm.Size = new System.Drawing.Size(233, 17);
-            this.lblAlarm.TabIndex = 81;
-            this.lblAlarm.Text = "Zaduženje je duže od 60 dana!";
-            this.lblAlarm.Visible = false;
-            // 
             // frmZaduzenja
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(807, 442);
+            this.ClientSize = new System.Drawing.Size(809, 450);
             this.Controls.Add(this.btnExcel);
             this.Controls.Add(this.btnStampa);
             this.Controls.Add(this.dugme_svi);
@@ -336,13 +355,12 @@ namespace Urban
             this.Controls.Add(this.pregled);
             this.Controls.Add(this.natpis_filter);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(825, 489);
             this.Name = "frmZaduzenja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "EVIDENCIJA ZADUZENJA";
-            this.Load += new System.EventHandler(this.frmZaduzenja_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmZaduzenja_FormClosing);
+            this.Load += new System.EventHandler(this.frmZaduzenja_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pregled)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

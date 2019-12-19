@@ -37,6 +37,8 @@ namespace Urban
         #region CSV Producer
         public static void ProduceCSV(DataTable dt, System.IO.StreamWriter file, bool WriteHeader)
         {
+           // file.WriteLine("sep=,");
+
             if (WriteHeader)
             {
                 string[] arr = new String[dt.Columns.Count];
