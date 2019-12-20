@@ -17,85 +17,97 @@ namespace AutoCadGrafika
         [CommandMethod("SelectObjectsByPolygon")]
         public  void SelectObjectsByCrossingWindow()
         {
-            // Get the current document editor
-            Editor acDocEd = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument.Editor;
-            var acDoc = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument;
-            Database acCurDb = acDoc.Database;
-
-            // Selektuj poligon za izdvajanje planova
-            PromptSelectionResult acSSPrompt = acDoc.Editor.GetSelection();
-
-            // If the prompt status is OK, objects were selected
-            if (acSSPrompt.Status == PromptStatus.OK)
+            try
             {
-                SelectionSet acSSet = acSSPrompt.Value;
-                if (acSSet.Count>1)
-                    Autodesk.AutoCAD.ApplicationServices.Application.ShowAlertDialog("Selektovano je vise objekata. Selektujte samo jedan! ");
-                else
+                // Get the current document editor
+                Editor acDocEd = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument.Editor;
+                var acDoc = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument;
+                Database acCurDb = acDoc.Database;
+
+                // Selektuj poligon za izdvajanje planova
+                PromptSelectionResult acSSPrompt = acDoc.Editor.GetSelection();
+
+                // If the prompt status is OK, objects were selected
+                if (acSSPrompt.Status == PromptStatus.OK)
                 {
-                    // Vrati skup tacaka za poligon
-                    var selPolygon = acSSet[0];
-                    if (selPolygon != null)
+                    SelectionSet acSSet = acSSPrompt.Value;
+                    if (acSSet.Count > 1)
+                        Autodesk.AutoCAD.ApplicationServices.Application.ShowAlertDialog("Selektovano je vise objekata. Selektujte samo jedan! ");
+                    else
                     {
-                        using (Transaction acTrans = acCurDb.TransactionManager.StartTransaction())
+                        // Vrati skup tacaka za poligon
+                        var selPolygon = acSSet[0];
+                        if (selPolygon != null)
                         {
-                            BlockTableRecord btr =(BlockTableRecord)acTrans.GetObject(
-                                acCurDb.CurrentSpaceId,OpenMode.ForRead);
-
-                            Entity acEnt = acTrans.GetObject(selPolygon.ObjectId,
-                                                        OpenMode.ForRead) as Entity;
-                            if (acEnt != null)
+                            using (Transaction acTrans = acCurDb.TransactionManager.StartTransaction())
                             {
+                                BlockTableRecord btr = (BlockTableRecord)acTrans.GetObject(
+                                    acCurDb.CurrentSpaceId, OpenMode.ForRead);
 
-                                Point3dCollection entPts = CollectPoints(acTrans, acEnt);
-                                if (entPts != null && entPts.Count > 0)
+                                Entity acEnt = acTrans.GetObject(selPolygon.ObjectId,
+                                                            OpenMode.ForRead) as Entity;
+                                if (acEnt != null)
                                 {
-                                    // Selektuj planove na osnovu poligona
-                                    var selPlanovi=acDoc.Editor.SelectCrossingPolygon(entPts);
-                                    string karts = "";
 
-                                    foreach (SelectedObject plan in selPlanovi.Value)
+                                    Point3dCollection entPts = CollectPoints(acTrans, acEnt);
+                                    if (entPts != null && entPts.Count > 0)
                                     {
-                                        // procitaj atribut KARTBROJ i dodaj ga u rezultat
-                                        Entity planEnt = acTrans.GetObject(plan.ObjectId,
-                                                        OpenMode.ForRead) as Entity;
-                                        object acadObj = planEnt.AcadObject;
-                                        var props = TypeDescriptor.GetProperties(acadObj);
-                                        foreach (PropertyDescriptor prop in props)
+                                        // Selektuj planove na osnovu poligona
+                                        var selPlanovi = acDoc.Editor.SelectCrossingPolygon(entPts);
+                                        string karts = "";
+
+                                        foreach (SelectedObject plan in selPlanovi.Value)
                                         {
-                                            if (prop.DisplayName.ToLower().Contains("kart"))
+                                            // procitaj atribut KARTBROJ i dodaj ga u rezultat
+                                            Entity planEnt = acTrans.GetObject(plan.ObjectId,
+                                                            OpenMode.ForRead) as Entity;
+                                            object acadObj = planEnt.AcadObject;
+                                            var props = TypeDescriptor.GetProperties(acadObj);
+                                            foreach (PropertyDescriptor prop in props)
                                             {
-                                                object value = prop.GetValue(acadObj);
-                                                if (value != null)
-                                                    karts += value.ToString() + ",";
+                                                if (prop.DisplayName.ToLower().Contains("kart"))
+                                                {
+                                                    object value = prop.GetValue(acadObj);
+                                                    if (value != null)
+                                                        karts += value.ToString() + ",";
+                                                }
                                             }
                                         }
-                                    }
-                                    if (karts.EndsWith(","))
-                                        karts = karts.Substring(0, karts.Length - 1);
-                                    if (karts.Length > 0)
-                                    {
-                                        Autodesk.AutoCAD.ApplicationServices.Application.ShowAlertDialog("Izdvojeni su sledeci katografski brojevi\n"
-                                            +karts+"\nKartografski brojevi su spremni za koriscenje u aplikaciji");
+                                        if (karts.EndsWith(","))
+                                            karts = karts.Substring(0, karts.Length - 1);
+                                        if (karts.Length > 0)
+                                        {
+                                            Autodesk.AutoCAD.ApplicationServices.Application.ShowAlertDialog("Izdvojeni su sledeci katografski brojevi\n"
+                                                + karts + "\nKartografski brojevi su spremni za koriscenje u aplikaciji");
 
-                                        Clipboard.SetText(karts);
-                                        
-                                    }
-                                    else
-                                        Autodesk.AutoCAD.ApplicationServices.Application.ShowAlertDialog("Nema ni jednog kartografskog broja. Pokusajte ponovo");
+                                            Clipboard.SetText(karts);
 
+                                        }
+                                        else
+                                            Autodesk.AutoCAD.ApplicationServices.Application.ShowAlertDialog("Nema ni jednog kartografskog broja. Pokusajte ponovo");
+
+                                    }
                                 }
-                            }
 
-                            acTrans.Commit();
+                                acTrans.Commit();
+                            }
                         }
                     }
                 }
+                else
+                {
+                    Autodesk.AutoCAD.ApplicationServices.Application.ShowAlertDialog("Nista nije elektovano. Molim selektujte poligon za pretragu!");
+                }
             }
-            else
+            catch (System.Exception ex)
             {
-                Autodesk.AutoCAD.ApplicationServices.Application.ShowAlertDialog("Nista nije elektovano. Molim selektujte poligon za pretragu!");
+                string poruka = ex.Message;
+                if (ex.InnerException != null)
+                    poruka += " " + ex.InnerException.Message;
+
+                Autodesk.AutoCAD.ApplicationServices.Application.ShowAlertDialog(poruka);
             }
+        
         }
 
         private Point3dCollection CollectPoints(Transaction tr, Entity ent)
