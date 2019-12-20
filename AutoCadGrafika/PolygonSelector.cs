@@ -8,6 +8,7 @@ using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.Geometry;
 using Autodesk.AutoCAD.EditorInput;
 using System.ComponentModel;
+using System.Windows.Forms;
 
 namespace AutoCadGrafika
 {
@@ -17,8 +18,8 @@ namespace AutoCadGrafika
         public  void SelectObjectsByCrossingWindow()
         {
             // Get the current document editor
-            Editor acDocEd = Application.DocumentManager.MdiActiveDocument.Editor;
-            var acDoc = Application.DocumentManager.MdiActiveDocument;
+            Editor acDocEd = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument.Editor;
+            var acDoc = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument;
             Database acCurDb = acDoc.Database;
 
             // Selektuj poligon za izdvajanje planova
@@ -29,7 +30,7 @@ namespace AutoCadGrafika
             {
                 SelectionSet acSSet = acSSPrompt.Value;
                 if (acSSet.Count>1)
-                    Application.ShowAlertDialog("Selektovano je vise objekata. Selektujte samo jedan! ");
+                    Autodesk.AutoCAD.ApplicationServices.Application.ShowAlertDialog("Selektovano je vise objekata. Selektujte samo jedan! ");
                 else
                 {
                     // Vrati skup tacaka za poligon
@@ -74,12 +75,14 @@ namespace AutoCadGrafika
                                         karts = karts.Substring(0, karts.Length - 1);
                                     if (karts.Length > 0)
                                     {
-                                        Application.ShowAlertDialog("Izdvojeni su sledeci katografski brojevi\n"
+                                        Autodesk.AutoCAD.ApplicationServices.Application.ShowAlertDialog("Izdvojeni su sledeci katografski brojevi\n"
                                             +karts+"\nKartografski brojevi su spremni za koriscenje u aplikaciji");
+
+                                        Clipboard.SetText(karts);
                                         
                                     }
                                     else
-                                        Application.ShowAlertDialog("Nema ni jednog kartografskog broja. Pokusajte ponovo");
+                                        Autodesk.AutoCAD.ApplicationServices.Application.ShowAlertDialog("Nema ni jednog kartografskog broja. Pokusajte ponovo");
 
                                 }
                             }
@@ -91,7 +94,7 @@ namespace AutoCadGrafika
             }
             else
             {
-                Application.ShowAlertDialog("Nista nije elektovano. Molim selektujte poligon za pretragu!");
+                Autodesk.AutoCAD.ApplicationServices.Application.ShowAlertDialog("Nista nije elektovano. Molim selektujte poligon za pretragu!");
             }
         }
 
