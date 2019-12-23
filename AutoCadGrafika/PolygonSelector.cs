@@ -54,7 +54,7 @@ namespace AutoCadGrafika
                                     {
                                         // Selektuj planove na osnovu poligona
                                         var selPlanovi = acDoc.Editor.SelectCrossingPolygon(entPts);
-                                        string karts = "";
+                                        List<string> karts = new List<string>();
 
                                         foreach (SelectedObject plan in selPlanovi.Value)
                                         {
@@ -69,18 +69,35 @@ namespace AutoCadGrafika
                                                 {
                                                     object value = prop.GetValue(acadObj);
                                                     if (value != null)
-                                                        karts += value.ToString() + ",";
+                                                    {
+                                                        if (value.ToString().Contains(","))
+                                                        {
+                                                            string[] kbr = value.ToString().Split(',');
+                                                            foreach (string kb in kbr)
+                                                                if (!karts.Contains(kb))
+                                                                    karts.Add(kb);
+                                                        }
+                                                        else
+                                                        {
+                                                            if (!karts.Contains(value.ToString()))
+                                                                karts.Add(value.ToString());
+                                                        }
+                                                    }
+                                                        
                                                 }
                                             }
                                         }
-                                        if (karts.EndsWith(","))
-                                            karts = karts.Substring(0, karts.Length - 1);
-                                        if (karts.Length > 0)
+                                        string ispis = "";
+                                        foreach (string kb in karts)
+                                            ispis += kb + ",";
+                                        if (ispis.EndsWith(","))
+                                            ispis = ispis.Substring(0, ispis.Length - 1);
+                                        if (ispis.Length > 0)
                                         {
                                             Autodesk.AutoCAD.ApplicationServices.Application.ShowAlertDialog("Izdvojeni su sledeci katografski brojevi\n"
-                                                + karts + "\nKartografski brojevi su spremni za koriscenje u aplikaciji");
+                                                + ispis + "\nKartografski brojevi su spremni za koriscenje u aplikaciji");
 
-                                            Clipboard.SetText(karts);
+                                            Clipboard.SetText(ispis);
 
                                         }
                                         else
