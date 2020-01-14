@@ -17,12 +17,15 @@ namespace AutoCadGrafika
         [CommandMethod("SelectObjectsByPolygon")]
         public  void SelectObjectsByCrossingWindow()
         {
+            string status = "";
             try
             {
                 // Get the current document editor
                 Editor acDocEd = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument.Editor;
                 var acDoc = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument;
                 Database acCurDb = acDoc.Database;
+
+                status = "Pocetak";
 
                 // Selektuj poligon za izdvajanje planova
                 PromptSelectionResult acSSPrompt = acDoc.Editor.GetSelection();
@@ -31,12 +34,18 @@ namespace AutoCadGrafika
                 if (acSSPrompt.Status == PromptStatus.OK)
                 {
                     SelectionSet acSSet = acSSPrompt.Value;
+
+                    status = "Vracen Selection Set";
+
                     if (acSSet.Count > 1)
                         Autodesk.AutoCAD.ApplicationServices.Application.ShowAlertDialog("Selektovano je vise objekata. Selektujte samo jedan! ");
                     else
                     {
                         // Vrati skup tacaka za poligon
                         var selPolygon = acSSet[0];
+
+                        status = "Vracen poligon iz SelectionSet";
+
                         if (selPolygon != null)
                         {
                             using (Transaction acTrans = acCurDb.TransactionManager.StartTransaction())
@@ -44,16 +53,28 @@ namespace AutoCadGrafika
                                 BlockTableRecord btr = (BlockTableRecord)acTrans.GetObject(
                                     acCurDb.CurrentSpaceId, OpenMode.ForRead);
 
+                                status = "Vracen BTR iz baze";
+
+
                                 Entity acEnt = acTrans.GetObject(selPolygon.ObjectId,
                                                             OpenMode.ForRead) as Entity;
+                                status = "Vracen entitet iz baze za poligon";
+
                                 if (acEnt != null)
                                 {
 
                                     Point3dCollection entPts = CollectPoints(acTrans, acEnt);
+                                    status = "Vracene tacke za poligon";
+
                                     if (entPts != null && entPts.Count > 0)
                                     {
                                         // Selektuj planove na osnovu poligona
-                                        var selPlanovi = acDoc.Editor.SelectCrossingPolygon(entPts);
+                                        PromptSelectionResult selPlanovi = acDoc.Editor.SelectCrossingPolygon(entPts);
+                                        if (selPlanovi.Status==PromptStatus.OK)
+                                            status = "Vraceni selektovani planovi pomocu poligona";
+                                        else
+                                            status = "Nije selektovan ni jedan plan pomocu poligona";
+
                                         List<string> karts = new List<string>();
 
                                         foreach (SelectedObject plan in selPlanovi.Value)
@@ -61,8 +82,13 @@ namespace AutoCadGrafika
                                             // procitaj atribut KARTBROJ i dodaj ga u rezultat
                                             Entity planEnt = acTrans.GetObject(plan.ObjectId,
                                                             OpenMode.ForRead) as Entity;
+                                            status = "Vracen entitet za pojedinacni plan";
+
                                             object acadObj = planEnt.AcadObject;
+                                            status = "Vracen ACAD objekat za plan";
                                             var props = TypeDescriptor.GetProperties(acadObj);
+                                            status = "Vraceni properties za ACAD object";
+
                                             foreach (PropertyDescriptor prop in props)
                                             {
                                                 if (prop.DisplayName.ToLower().Contains("kart"))
@@ -85,6 +111,7 @@ namespace AutoCadGrafika
                                                     }
                                                         
                                                 }
+                                                status = "Vracen propery KART";
                                             }
                                         }
                                         string ispis = "";
@@ -98,6 +125,7 @@ namespace AutoCadGrafika
                                                 + ispis + "\nKartografski brojevi su spremni za koriscenje u aplikaciji");
 
                                             Clipboard.SetText(ispis);
+                                            status = "Rezultat dodat u Clipboard";
 
                                         }
                                         else
@@ -115,10 +143,11 @@ namespace AutoCadGrafika
                 {
                     Autodesk.AutoCAD.ApplicationServices.Application.ShowAlertDialog("Nista nije elektovano. Molim selektujte poligon za pretragu!");
                 }
+                status = "Sve proslo OK";
             }
             catch (System.Exception ex)
             {
-                string poruka = ex.Message;
+                string poruka = ex.Message+"\n"+status;
                 if (ex.InnerException != null)
                     poruka += " " + ex.InnerException.Message;
 
