@@ -34,6 +34,7 @@ namespace AutoCadGrafika
                     using (SelectionSet ss = pc.Select())
                         if (ss != null && ss.Count > 0)
                         {
+                            status = "Vraceni selektovani objekti";
                             ed.SetImpliedSelection(ss.GetObjectIds().ToArray());
                             List<string> karts = new List<string>();
 
