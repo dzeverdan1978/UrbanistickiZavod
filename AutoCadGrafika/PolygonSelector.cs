@@ -13,6 +13,8 @@ using System.Windows.Forms;
 using MgdAcApplication = Autodesk.AutoCAD.ApplicationServices.Application;
 using MgdAcDocument = Autodesk.AutoCAD.ApplicationServices.Document;
 using AcWindowsNS = Autodesk.AutoCAD.Windows;
+using Autodesk.AutoCAD.Internal.PropertyInspector;
+using System.Runtime.InteropServices;
 
 namespace AutoCadGrafika
 {
@@ -43,20 +45,22 @@ namespace AutoCadGrafika
                                 foreach (SelectedObject plan in ss)
                                 {
                                     // procitaj atribut KARTBROJ i dodaj ga u rezultat
-                                    Entity planEnt = acTrans.GetObject(plan.ObjectId,
-                                                    OpenMode.ForRead) as Entity;
-                                    status = "Vracen entitet za pojedinacni plan";
 
-                                    object acadObj = planEnt.AcadObject;
-                                    status = "Vracen ACAD objekat za plan";
-                                    var props = TypeDescriptor.GetProperties(acadObj);
-                                    status = "Vraceni properties za ACAD object";
-
-                                    foreach (PropertyDescriptor prop in props)
+                                    var props = GetOPMProperties(plan.ObjectId);
+                                    if (props.Count == 0)
                                     {
-                                        if (prop.DisplayName.ToLower().Contains("kart"))
+                                        status = "Nema properija za objekat";
+
+                                    }
+                                    else
+                                        status = "Vraceni properties za object";
+
+                                    foreach (var pair in props)
+                                    {
+                                        
+                                        if (pair.Key.ToLower().Contains("kart"))
                                         {
-                                            object value = prop.GetValue(acadObj);
+                                            object value = pair.Value;
                                             if (value != null)
                                             {
                                                 if (value.ToString().Contains(","))
@@ -71,8 +75,10 @@ namespace AutoCadGrafika
                                                     if (!karts.Contains(value.ToString()))
                                                         karts.Add(value.ToString());
                                                 }
-                                            }
 
+                                            }
+                                            if (Marshal.IsComObject(pair.Value))
+                                                Marshal.ReleaseComObject(pair.Value);
                                         }
                                         status = "Vracen propery KART";
                                     }
@@ -111,7 +117,44 @@ namespace AutoCadGrafika
         
         }
 
-        
+        public static IDictionary<string, object> GetOPMProperties(ObjectId id)
+        {
+            Dictionary<string, object> map = new Dictionary<string, object>();
+            IntPtr pUnk = ObjectPropertyManagerPropertyUtility.GetIUnknownFromObjectId(id);
+            if (pUnk != IntPtr.Zero)
+            {
+                using (CollectionVector properties = ObjectPropertyManagerProperties.GetProperties(id, false, false))
+                {
+                    int cnt = properties.Count();
+                    if (cnt != 0)
+                    {
+                        using (CategoryCollectable category = properties.Item(0) as CategoryCollectable)
+                        {
+                            CollectionVector props = category.Properties;
+                            int propCount = props.Count();
+                            for (int j = 0; j < propCount; j++)
+                            {
+                                using (PropertyCollectable prop = props.Item(j) as PropertyCollectable)
+                                {
+                                    if (prop == null)
+                                        continue;
+                                    object value = null;
+                                    if (prop.GetValue(pUnk, ref value) && value != null)
+                                    {
+                                        if (!map.ContainsKey(prop.Name))
+                                            map[prop.Name] = value;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                Marshal.Release(pUnk);
+            }
+            return map;
+        }
+
+
 
     }
 }
