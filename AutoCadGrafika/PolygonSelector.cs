@@ -15,6 +15,7 @@ using MgdAcDocument = Autodesk.AutoCAD.ApplicationServices.Document;
 using AcWindowsNS = Autodesk.AutoCAD.Windows;
 using Autodesk.AutoCAD.Internal.PropertyInspector;
 using System.Runtime.InteropServices;
+using System.Reflection;
 
 namespace AutoCadGrafika
 {
@@ -45,43 +46,30 @@ namespace AutoCadGrafika
                                 foreach (SelectedObject plan in ss)
                                 {
                                     // procitaj atribut KARTBROJ i dodaj ga u rezultat
-
-                                    var props = GetOPMProperties(plan.ObjectId);
-                                    if (props.Count == 0)
-                                    {
-                                        status = "Nema properija za objekat";
-
-                                    }
-                                    else
-                                        status = "Vraceni properties za object";
-
-                                    foreach (var pair in props)
-                                    {
-                                        
-                                        if (pair.Key.ToLower().Contains("kart"))
-                                        {
-                                            object value = pair.Value;
-                                            if (value != null)
+                                    Entity ent = acTrans.GetObject(plan.ObjectId, OpenMode.ForRead) as Entity;
+                                    string kart = GetKart(ent);
+                                    
+ 
+                                            if (kart != null)
                                             {
-                                                if (value.ToString().Contains(","))
+                                                if (kart.Contains(","))
                                                 {
-                                                    string[] kbr = value.ToString().Split(',');
+                                                    string[] kbr = kart.Split(',');
                                                     foreach (string kb in kbr)
                                                         if (!karts.Contains(kb))
                                                             karts.Add(kb);
                                                 }
                                                 else
                                                 {
-                                                    if (!karts.Contains(value.ToString()))
-                                                        karts.Add(value.ToString());
+                                                    if (!karts.Contains(kart))
+                                                        karts.Add(kart);
                                                 }
 
                                             }
-                                            if (Marshal.IsComObject(pair.Value))
-                                                Marshal.ReleaseComObject(pair.Value);
-                                        }
+                                           
+                                        
                                         status = "Vracen propery KART";
-                                    }
+                                    
                                 }
                                 acTrans.Commit();
                             }
@@ -117,43 +105,38 @@ namespace AutoCadGrafika
         
         }
 
-        public static IDictionary<string, object> GetOPMProperties(ObjectId id)
+
+        static string GetKart(DBObject obj)
         {
-            Dictionary<string, object> map = new Dictionary<string, object>();
-            IntPtr pUnk = ObjectPropertyManagerPropertyUtility.GetIUnknownFromObjectId(id);
-            if (pUnk != IntPtr.Zero)
+           
+
+            PropertyInfo[] piArr = obj.GetType().GetProperties();
+            foreach (PropertyInfo pi in piArr)
             {
-                using (CollectionVector properties = ObjectPropertyManagerProperties.GetProperties(id, false, false))
+                object value = null;
+                try
                 {
-                    int cnt = properties.Count();
-                    if (cnt != 0)
+                    if (pi.Name.ToLower().Contains("kart"))
                     {
-                        using (CategoryCollectable category = properties.Item(0) as CategoryCollectable)
-                        {
-                            CollectionVector props = category.Properties;
-                            int propCount = props.Count();
-                            for (int j = 0; j < propCount; j++)
-                            {
-                                using (PropertyCollectable prop = props.Item(j) as PropertyCollectable)
-                                {
-                                    if (prop == null)
-                                        continue;
-                                    object value = null;
-                                    if (prop.GetValue(pUnk, ref value) && value != null)
-                                    {
-                                        if (!map.ContainsKey(prop.Name))
-                                            map[prop.Name] = value;
-                                    }
-                                }
-                            }
-                        }
+                        value = pi.GetValue(obj, null);
+                        return value.ToString();
                     }
                 }
-                Marshal.Release(pUnk);
-            }
-            return map;
-        }
+                catch (System.Exception ex)
+                {
+                    if (ex.InnerException is Autodesk.AutoCAD.Runtime.Exception &&
+                        (ex.InnerException as Autodesk.AutoCAD.Runtime.Exception).ErrorStatus == ErrorStatus.NotApplicable)
+                        continue;
+                    else
+                        throw;
+                }
 
+                
+            }
+
+            return null;
+
+        }
 
 
     }
