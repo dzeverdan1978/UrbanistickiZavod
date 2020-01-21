@@ -16,6 +16,8 @@ using AcWindowsNS = Autodesk.AutoCAD.Windows;
 using Autodesk.AutoCAD.Internal.PropertyInspector;
 using System.Runtime.InteropServices;
 using System.Reflection;
+using Autodesk.Gis.Map.Classification;
+using System.Collections;
 
 namespace AutoCadGrafika
 {
@@ -108,30 +110,18 @@ namespace AutoCadGrafika
 
         static string GetKart(DBObject obj)
         {
-           
+            Autodesk.Gis.Map.Classification.ClassificationManager cls_manager = null;
+            cls_manager = Autodesk.Gis.Map.HostMapApplicationServices.Application.ActiveProject.ClassificationManager;
+            FeatureClassPropertyCollection objClass_Property = new FeatureClassPropertyCollection();
+            ArrayList list_values = null;
 
-            PropertyInfo[] piArr = obj.GetType().GetProperties();
-            foreach (PropertyInfo pi in piArr)
+            cls_manager.GetProperties(objClass_Property, list_values, obj.ObjectId);
+            
+
+            foreach (FeatureClassProperty cp in objClass_Property)
             {
-                object value = null;
-                try
-                {
-                    if (pi.Name.ToLower().Contains("kart"))
-                    {
-                        value = pi.GetValue(obj, null);
-                        return value.ToString();
-                    }
-                }
-                catch (System.Exception ex)
-                {
-                    if (ex.InnerException is Autodesk.AutoCAD.Runtime.Exception &&
-                        (ex.InnerException as Autodesk.AutoCAD.Runtime.Exception).ErrorStatus == ErrorStatus.NotApplicable)
-                        continue;
-                    else
-                        throw;
-                }
-
-                
+                if (cp.Name.ToString().ToLower().Contains("kart"))
+                    return cp.DefaultValue.ToString();
             }
 
             return null;
