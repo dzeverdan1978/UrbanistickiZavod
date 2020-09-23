@@ -449,8 +449,8 @@ SELECT id, naziv FROM Firma WHERE (id = @id) ORDER BY naziv</CommandText>
                 </xs:simpleType>
               </xs:element>
               <xs:element name="PREAL" msprop:Generator_ColumnVarNameInTable="columnPREAL" msprop:Generator_ColumnPropNameInRow="PREAL" msprop:Generator_ColumnPropNameInTable="PREALColumn" msprop:Generator_UserColumnName="PREAL" type="xs:boolean" />
-              <xs:element name="TREAL" msprop:Generator_ColumnVarNameInTable="columnTREAL" msprop:Generator_ColumnPropNameInRow="TREAL" msprop:Generator_ColumnPropNameInTable="TREALColumn" msprop:Generator_UserColumnName="TREAL" type="xs:boolean" />
-              <xs:element name="RREAL" msprop:Generator_ColumnVarNameInTable="columnRREAL" msprop:Generator_ColumnPropNameInRow="RREAL" msprop:Generator_ColumnPropNameInTable="RREALColumn" msprop:Generator_UserColumnName="RREAL" type="xs:boolean" />
+              <xs:element name="TREAL" msdata:Caption="PGR" msprop:Generator_ColumnVarNameInTable="columnTREAL" msprop:Generator_ColumnPropNameInRow="TREAL" msprop:Generator_ColumnPropNameInTable="TREALColumn" msprop:Generator_UserColumnName="TREAL" type="xs:boolean" />
+              <xs:element name="RREAL" msdata:Caption="SOBAVEZA" msprop:Generator_ColumnVarNameInTable="columnRREAL" msprop:Generator_ColumnPropNameInRow="RREAL" msprop:Generator_ColumnPropNameInTable="RREALColumn" msprop:Generator_UserColumnName="RREAL" type="xs:boolean" />
               <xs:element name="INREF" msprop:Generator_ColumnVarNameInTable="columnINREF" msprop:Generator_ColumnPropNameInRow="INREF" msprop:Generator_ColumnPropNameInTable="INREFColumn" msprop:Generator_UserColumnName="INREF" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
