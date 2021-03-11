@@ -1,0 +1,6 @@
+E:\Urbanisticki zavod\AutoCadGrafika\obj\Debug\AutoCadGrafika.csproj.CoreCompileInputs.cache
+E:\Urbanisticki zavod\AutoCadGrafika\bin\Debug\AutoCadGrafika.dll
+E:\Urbanisticki zavod\AutoCadGrafika\bin\Debug\AutoCadGrafika.pdb
+E:\Urbanisticki zavod\AutoCadGrafika\obj\Debug\AutoCadGrafika.dll
+E:\Urbanisticki zavod\AutoCadGrafika\obj\Debug\AutoCadGrafika.pdb
+E:\Urbanisticki zavod\AutoCadGrafika\obj\Debug\AutoCadGrafika.csprojAssemblyReference.cache
