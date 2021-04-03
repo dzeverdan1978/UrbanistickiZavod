@@ -61,7 +61,6 @@ C:\Urbanisticki zavod\Urban\obj\Debug\Urban.exe
 C:\Urbanisticki zavod\Urban\obj\Debug\Urban.pdb
 C:\Urbanisticki zavod\Urban\bin\Debug\Urban.exe
 C:\Urbanisticki zavod\Urban\bin\Debug\Urban.pdb
-C:\Urbanisticki zavod\Urban\obj\Debug\ResolveAssemblyReference.cache
 C:\Urbanisticki zavod\Urban\obj\Debug\Urban.Form1.resources
 C:\Urbanisticki zavod\Urban\obj\Debug\Urban.frmDOC.resources
 C:\Urbanisticki zavod\Urban\obj\Debug\Urban.frmDOCPretraga.resources
@@ -84,8 +83,6 @@ C:\Urbanisticki zavod\Urban\obj\Debug\Urban.frmSnimanje.resources
 C:\Urbanisticki zavod\Urban\obj\Debug\Urban.frmUticaji.resources
 C:\Urbanisticki zavod\Urban\obj\Debug\Urban.frmZaduzenja.resources
 C:\Urbanisticki zavod\Urban\obj\Debug\Urban.Properties.Resources.resources
-C:\Urbanisticki zavod\Urban\obj\Debug\GenerateResource-ResGen.read.1.tlog
-C:\Urbanisticki zavod\Urban\obj\Debug\GenerateResource-ResGen.write.1.tlog
 C:\Urbanisticki zavod\Urban\obj\Debug\Urban.frmBUD.resources
 C:\Urbanisticki zavod\Urban\obj\Debug\Urban.frmPretragaBUD.resources
 C:\URBAN\Urbanisticki zavod\Urban\bin\Debug\Urban.exe.config
@@ -256,3 +253,8 @@ E:\Urbanisticki zavod\Urban\obj\Debug\Urban.csproj.CoreCompileInputs.cache
 E:\Urbanisticki zavod\Urban\obj\Debug\Urban.csproj.CopyComplete
 E:\Urbanisticki zavod\Urban\obj\Debug\Urban.exe
 E:\Urbanisticki zavod\Urban\obj\Debug\Urban.pdb
+C:\Urbanisticki zavod\Urban\bin\Debug\stdole.dll
+C:\Urbanisticki zavod\Urban\obj\Debug\Urban.csprojAssemblyReference.cache
+C:\Urbanisticki zavod\Urban\obj\Debug\Urban.csproj.GenerateResource.cache
+C:\Urbanisticki zavod\Urban\obj\Debug\Urban.csproj.CoreCompileInputs.cache
+C:\Urbanisticki zavod\Urban\obj\Debug\Urban.csproj.CopyComplete
